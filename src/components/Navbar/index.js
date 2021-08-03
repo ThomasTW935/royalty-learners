@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './Navbar.css'
 import logo from '../../assets/images/Anais.png'
 import { Link } from 'react-router-dom'
 import Nav from './Navbar.style'
