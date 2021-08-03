@@ -16,6 +16,10 @@ const links = [
     link: 'services',
     display: 'services',
   },
+  {
+    link: 'register',
+    display: 'register',
+  },
 ]
 
 export default function Navbar() {
