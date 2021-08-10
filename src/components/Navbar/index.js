@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../assets/images/Anais.png'
+import logo from '../../assets/images/sample logo.png'
 import { Link } from 'react-router-dom'
 import Nav from './Navbar.style'
 
@@ -31,7 +31,7 @@ export default function Navbar() {
           src={logo}
           alt='logo'
           className='logo1'
-          style={{ width: '5rem', height: '5rem' }}
+          style={{ width: '6rem', height: '6rem' }}
         />
       </Link>
       <Nav.List>
