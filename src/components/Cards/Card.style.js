@@ -2,17 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  display: grid;
+  display: flex;
+  grid-template-columns: auto;
+  align-items: center;
+  flex-flow: column;
   width: 200px;
   height: auto;
-  border: black solid;
+  margin: 0 auto;
+  border: 2px solid #000;
   border-radius: 20px;
-  font-size: auto;
-  justify-content: center;
-  color: black;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-gap: 10px;
 
 `;
 

@@ -5,7 +5,7 @@ import logo from '../../assets/images/sample logo.png'
 
 export default function Home() {
   return (
-<div className="grid">
+          <div >
   <h1>Home</h1>
   <Card>
   <img
