@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const Nav = styled.nav`
   display:flex;
   justify-content: space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  background: white;
 `
 
 const list = styled.ul`

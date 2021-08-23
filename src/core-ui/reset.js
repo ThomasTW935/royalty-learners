@@ -81,6 +81,9 @@ const reset = css`
 `
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
   main,nav{
     padding: .5rem;
   }

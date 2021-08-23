@@ -4,7 +4,7 @@ const Container = styled.div`
   display: flex;
   grid-template-columns: auto;
   align-items: center;
-  flex-flow: column;
+  flex-direction: column;
   width: 250px;
   height: auto;
   margin: 0 auto;
