@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../assets/images/sample logo.png'
+import logo from '../../assets/images/Untitled.png'
 import { Link } from 'react-router-dom'
 import Nav from './Navbar.style'
 
@@ -15,11 +15,8 @@ const links = [
   {
     link: 'services',
     display: 'services',
-  },
-  {
-    link: 'register',
-    display: 'register',
-  },
+  }
+  
 ]
 
 export default function Navbar() {
@@ -31,7 +28,7 @@ export default function Navbar() {
           src={logo}
           alt='logo'
           className='logo1'
-          style={{ width: '3rem', height: '3rem' }}
+          style={{ width: '28rem', height: '4rem' }}
         />
       </Link>
       <Nav.List>

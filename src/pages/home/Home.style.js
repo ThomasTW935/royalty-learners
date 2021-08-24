@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 
-const Con = styled.div`
+const Board = styled.div`
+display: flex;
+  grid-template-columns: auto;
+  align-items: center;
+  flex-direction: column;
+  width: 1500px;
+  height: 600px;
+  margin: 0 auto;
+  border: 10px solid #000;
+  border-radius: 15px;
+  padding: .5rem;
 `
 
-const cards = styled.div`
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: .5rem;
-`
-
-Con.Cards = cards
-
-export default Con
+export default Board

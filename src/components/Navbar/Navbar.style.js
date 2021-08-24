@@ -6,12 +6,13 @@ const Nav = styled.nav`
   align-items:center;
   position:sticky;
   top:0;
-  background: white;
+  background: linen;
 `
 
 const list = styled.ul`
   display:flex;
   gap: 1rem;
+  font-size: 1rem;
   list-style:none;
   text-transform: capitalize;
   `
