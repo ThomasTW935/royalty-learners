@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ const Container = styled.div`
   margin: 0 auto;
   border: 2px solid #000;
   border-radius: 15px;
-  padding: .5rem;
+  padding: 0.5rem;
 `
 
 const Content = styled.div`
@@ -19,7 +20,7 @@ const Content = styled.div`
   justify-content: center;
 `
 
-const Button = styled.button`
+const Button = styled(Link)`
   background: green;
   color: #fff;
   padding: 10px;
