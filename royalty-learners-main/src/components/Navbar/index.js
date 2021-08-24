@@ -28,7 +28,7 @@ export default function Navbar() {
           src={logo}
           alt='logo'
           className='logo1'
-          style={{ width: '28rem', height: '6rem' }}
+          style={{ width: '28rem', height: '4rem' }}
         />
       </Link>
       <Nav.List>
