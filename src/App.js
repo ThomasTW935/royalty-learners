@@ -14,7 +14,7 @@ function App() {
         <Route path='/contacts' component={Contacts}/>
         <Route path='/services' component={Services}/>
         <Route path='/register' component={register}/>
-
+        <div>asdasdsadas</div>
       </Switch>
     </Router>
 
