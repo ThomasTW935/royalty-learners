@@ -1,26 +1,25 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
   grid-template-columns: auto;
   align-items: center;
   flex-direction: column;
-  width: 250px;
-  height: auto;
+  width: 200px;
+  height: 20rem;
   margin: 0 auto;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 15px;
   padding: 0.5rem;
-`
+`;
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`
+`;
 
-const Button = styled(Link)`
+const Button = styled.button`
   background: green;
   color: #fff;
   padding: 10px;
@@ -34,7 +33,7 @@ const Button = styled(Link)`
   &:hover {
     background: darkgreen;
   }
-`
-Container.Content = Content
-Container.Button = Button
-export default Container
+`;
+Container.Content = Content;
+Container.Button = Button;
+export default Container;

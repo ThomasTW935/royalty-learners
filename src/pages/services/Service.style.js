@@ -1,14 +1,13 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-const Con = styled.div`
-`
+const Con = styled.div``;
 
 const cards = styled.div`
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: .5rem;
-`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+`;
 
-Con.Cards = cards
+Con.Cards = cards;
 
-export default Con
+export default Con;

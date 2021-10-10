@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components'
+import { createGlobalStyle, css } from "styled-components";
 
 const reset = css`
   /* Box sizing rules */
@@ -26,8 +26,8 @@ const reset = css`
   }
 
   /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-  ul[role='list'],
-  ol[role='list'] {
+  ul[role="list"],
+  ol[role="list"] {
     list-style: none;
   }
 
@@ -41,6 +41,7 @@ const reset = css`
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: linen;
   }
 
   /* A elements that don't have a class get default styles */
@@ -78,18 +79,22 @@ const reset = css`
       scroll-behavior: auto !important;
     }
   }
-`
+`;
 const GlobalStyle = createGlobalStyle`
   ${reset}
   html{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
   }
   main,nav{
-    padding: .5rem;
+    padding: 0rem;
+    &>div{
+      padding: 0rem;
+      height: 100vh;
+    }
+    
   }
-  main{
-    margin: .5rem 0;
-  }
-`
+ 
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

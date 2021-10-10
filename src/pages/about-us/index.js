@@ -1,9 +1,5 @@
-import React from 'react'
-
+import React from "react";
+import Box from "./about-us-style";
 export default function AboutUs() {
-  return (
-    <div>
-      <h1>About Us</h1>
-    </div>
-  )
+  return <Box id="aboutus">sdsd</Box>;
 }
