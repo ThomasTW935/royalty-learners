@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 const Nav = styled.nav`
   display: flex;
-  margin-right: 2rem;
-  margin-left: 2rem;
   justify-content: space-between;
   align-items: center;
   position: sticky;

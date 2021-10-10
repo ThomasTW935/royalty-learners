@@ -7,11 +7,8 @@ export default function Home() {
   return (
     <main>
       <Board id="home">
-        <div>
-          <h1>Here at SM </h1>
-          <p></p>
-          <h3>We Got it all for you!</h3>
-        </div>
+        <h1>Here at SM </h1>
+        <h3>We Got it all for you!</h3>
       </Board>
       <Services />
       <Tutor />

@@ -5,8 +5,7 @@ const Container = styled.div`
   grid-template-columns: auto;
   align-items: center;
   flex-direction: column;
-  width: 200px;
-  height: 20rem;
+  min-width: 200px;
   margin: 0 auto;
   border: 1px solid #000;
   border-radius: 15px;

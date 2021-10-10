@@ -4,8 +4,8 @@ const Con = styled.div``;
 
 const cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
 `;
 
 Con.Cards = cards;
