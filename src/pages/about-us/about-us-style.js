@@ -13,6 +13,9 @@ const Box = styled.div`
   background-image: url(${Architecture_Caruana});
   background-repeat: no-repeat;
   background-size: cover;
+  p {
+    margin-bottom: 40rem;
+  }
 `;
 
 export default Box;

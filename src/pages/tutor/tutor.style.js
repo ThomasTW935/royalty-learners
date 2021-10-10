@@ -7,7 +7,7 @@ const Kevin = styled.div`
   align-items: center;
   flex-wrap: nowrap;
   width: 1500px;
-  height: 600px;
+  height: 1000px;
   margin: 0 auto;
   padding: 0.5rem;
   background-image: url(${modern});

@@ -38,16 +38,6 @@ const cards = [
     description:
       "There is no one who loves pain itself, who seeks after it and want",
   },
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
 ];
 
 export default function Services() {

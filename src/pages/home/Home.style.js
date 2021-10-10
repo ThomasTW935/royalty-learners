@@ -3,7 +3,7 @@ import styled from "styled-components";
 import HomepageImg from "../../assets/images/HomepageImg.jpg";
 
 const Board = styled.div`
-  display: flex;
+  display: flexbox;
   grid-template-columns: auto;
   align-items: center;
   flex-wrap: nowrap;
@@ -14,7 +14,9 @@ const Board = styled.div`
   background-size: cover;
   text-align: justify;
   h1 {
-    margin-right: 2rem;
+    margin-left: 20rem;
+    margin-bottom: 20rem;
+    margin-right: 0rem;
   }
 `;
 export default Board;

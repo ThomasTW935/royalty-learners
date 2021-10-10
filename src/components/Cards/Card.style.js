@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  grid-template-columns: auto;
   align-items: center;
+  align-self: auto;
   flex-direction: column;
-  min-width: 200px;
+  width: 200px;
+  height: 20rem;
   margin: 0 auto;
   border: 1px solid #000;
   border-radius: 15px;
-  padding: 0.5rem;
+  padding: 0.2rem;
 `;
 
 const Content = styled.div`

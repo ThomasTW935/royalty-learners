@@ -41,7 +41,7 @@ const reset = css`
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    background-color: linen;
+    //background-color: linen;
   }
 
   /* A elements that don't have a class get default styles */

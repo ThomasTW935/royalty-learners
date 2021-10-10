@@ -21,7 +21,7 @@ const links = [
     display: "teachers",
   },
   {
-    link: "inquiry",
+    link: "register",
     display: "inquiry",
   },
 ];
