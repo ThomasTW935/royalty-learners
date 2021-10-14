@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/Untitled.png";
-import { Link } from "react-router-dom";
+import logo1 from "../../assets/icons/search-icon.png";
 import Nav from "./Navbar.style";
 
 const links = [
@@ -22,7 +22,7 @@ const links = [
   },
   {
     link: "register",
-    display: "inquiry",
+    display: "Inquiry",
   },
 ];
 
@@ -52,6 +52,14 @@ export default function Navbar() {
           );
         })}
       </Nav.List>
+      <a href="#">
+        <img
+          src={logo1}
+          alt="logo"
+          className="logo1"
+          style={{ width: "auto", height: "4.5rem" }}
+        />
+      </a>
     </Nav>
   );
 }

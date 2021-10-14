@@ -1,16 +1,58 @@
 import styled from "styled-components";
-//import Architecture_Caruana from "../../assets/images/Architecture_Caruana.png";
 
-const Bond = styled.div`
-  display: flex;
-  grid-template-columns: auto;
-  align-items: center;
-  flex-wrap: nowrap;
-  width: 1500px;
-  height: 800px;
-  margin: 0 auto;
-  padding: 0.5rem;
-  background-color: #39bff7;
+export const Box = styled.div`
+  padding: 80px 60px;
+  background: #7289da;
+  position: bottom;
+  top: 100;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    padding: 70px 30px;
+  }
 `;
 
-export default Bond;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background: red; */
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 60px;
+`;
+
+export const Row = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  grid-gap: 20px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+`;
+
+export const FooterLink = styled.a`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+
+  &:hover {
+    color: green;
+    transition: 200ms ease-in;
+  }
+`;
+
+export const Heading = styled.p`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: bold;
+`;

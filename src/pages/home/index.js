@@ -11,8 +11,8 @@ export default function Home() {
         <h2>We Got it all for you!</h2>
       </Board>
       <Services />
-      <Tutor />
       <AboutUs />
+      <Tutor />
       <Contacts />
     </main>
   );

@@ -8,7 +8,7 @@ const Kevin = styled.div`
   flex-wrap: nowrap;
   width: 1500px;
   height: 1000px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0.5rem;
   background-image: url(${modern});
   background-repeat: no-repeat;

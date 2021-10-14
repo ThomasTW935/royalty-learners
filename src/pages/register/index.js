@@ -4,7 +4,7 @@ import { TextField } from "@material-ui/core";
 import Container from "../../components/Cards/Card.style";
 import { Link } from "react-router-dom";
 
-export default function register() {
+export default function Register() {
   return (
     <div>
       <h1>Forms</h1>
