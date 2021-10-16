@@ -87,12 +87,10 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
   main,nav{
-    padding: 0rem;
     &>div{
-      padding: 0rem;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 5rem 2rem;
     }
-    
   }
  
 `;

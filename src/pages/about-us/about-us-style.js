@@ -6,17 +6,10 @@ const Box = styled.div`
   grid-template-columns: auto;
   align-items: center;
   flex-wrap: nowrap;
-  width: 1500px;
-  height: 800px;
   margin: 0 auto;
-  padding: 0.5rem;
   background-image: url(${Architecture_Caruana});
   background-repeat: no-repeat;
   background-size: cover;
-
-  p {
-    margin-bottom: 40rem;
-  }
 `;
 
 export default Box;

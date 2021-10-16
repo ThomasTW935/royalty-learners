@@ -1,24 +1,34 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Mod = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-`
+`;
 
 const main = styled.div`
-  position:fixed;
+  position: fixed;
   background: white;
-  width: 40%;
-  height: 70%;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  width: 30%;
 
-`
-Mod.main = main
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
+const button = styled.button`
+  justify-self: center;
+  width: 10rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0 auto;
+`;
 
-export default Mod
+Mod.main = main;
+Mod.button = button;
+export default Mod;

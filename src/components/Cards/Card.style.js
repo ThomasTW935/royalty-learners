@@ -4,12 +4,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 200px;
-  height: 20rem;
   margin: 0 auto;
   border: 1px solid #000;
-  border-radius: 15px;
-  padding: 0.2rem;
+  border-radius: 10px;
+  padding: 1rem ;
 `;
 
 const Content = styled.div`
@@ -19,7 +17,7 @@ const Content = styled.div`
 `;
 
 const Button = styled.button`
-  background: green;
+  background: pink;
   color: #fff;
   padding: 10px;
   margin: 5px;
@@ -30,7 +28,7 @@ const Button = styled.button`
   cursor: pointer;
   align-content: center;
   &:hover {
-    background: darkgreen;
+    background: skyblue;
   }
 `;
 Container.Content = Content;

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/Untitled.png";
+import logo from "../../assets/images/RoyaltyLearnersLogo.png";
 import logo1 from "../../assets/icons/search-icon.png";
 import Nav from "./Navbar.style";
+import AcUnitIcon from "@material-ui/icons/AcUnit";
+// import AcUnitIcon from '@mui/icons-material/AcUnit';
 
 const links = [
   {
@@ -30,14 +32,9 @@ export default function Navbar() {
   const [active, setActive] = useState("");
   return (
     <Nav>
-      <a href="#home">
-        <img
-          src={logo}
-          alt="logo"
-          className="logo1"
-          style={{ width: "28rem", height: "4rem" }}
-        />
-      </a>
+      <Nav.Logo href="#home">
+        <img src={logo} alt="logo" />
+      </Nav.Logo>
       <Nav.List>
         {links.map((link) => {
           return (
@@ -57,7 +54,7 @@ export default function Navbar() {
           src={logo1}
           alt="logo"
           className="logo1"
-          style={{ width: "auto", height: "4.5rem" }}
+          style={{ width: "auto", height: "3.5rem" }}
         />
       </a>
     </Nav>

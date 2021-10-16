@@ -3,20 +3,23 @@ import styled from "styled-components";
 import HomepageImg from "../../assets/images/HomepageImg.jpg";
 
 const Board = styled.div`
-  display: flexbox;
-  grid-template-columns: auto;
+  display: flex;
   align-items: center;
-  flex-wrap: nowrap;
   width: 100%;
   height: 800px;
   background-image: url(${HomepageImg});
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: justify;
+  font-size: 20px;
+  font-family: roboto slab, serif;
+  font-weight: 700;
+  div {
+    padding-top: 3rem;
+    padding-left: 10rem;
+  }
   h1 {
-    margin-left: 20rem;
-    margin-bottom: 20rem;
-    margin-right: 0rem;
+    display: flex;
+    gap: 1rem;
   }
 `;
 export default Board;
