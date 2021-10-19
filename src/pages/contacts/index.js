@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <Box id="contacts">
-      <h1 style={{ color: "White", textAlign: "center"}}>
+      <h1 style={{ color: "White", textAlign: "center" }}>
         GeeksforGeeks: A Computer Science Portal for Geeks
       </h1>
       <Container>
@@ -20,7 +20,7 @@ const Footer = () => {
             <Heading>About Us</Heading>
             <FooterLink href="#">Aim</FooterLink>
             <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <FooterLink href="#">Testidddmonials</FooterLink>
           </Column>
           <Column>
             <Heading>Services</Heading>

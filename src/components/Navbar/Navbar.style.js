@@ -34,6 +34,8 @@ const item = styled.li`
     border-bottom: ${(props) => (props.active ? "2px solid black" : "")};
     &:hover {
       border-bottom: 2px solid black;
+      color: #45b0cb;
+      transition: 200ms ease-in;
     }
   }
 `;

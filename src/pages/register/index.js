@@ -43,6 +43,9 @@ export default function Register() {
           <Mod.button>
             <Link to="/form2">Proceed!</Link>
           </Mod.button>
+          <Mod.button>
+            <Link to="/">Back</Link>
+          </Mod.button>
         </Mod.main>
       </Mod>
     </div>

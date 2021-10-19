@@ -1,54 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../components/Cards";
-import logo from "../../assets/images/sample logo.png";
 import Con from "./Service.style";
-
-const cards = [
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-  {
-    src: logo,
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-];
+import { services } from "../../data/services.js";
+import Form from "../../components/Form";
 
 export default function Services() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <Con id="services">
       <h1>Services</h1>
       <Con.Cards>
-        {cards.map((card) => (
-          <Card image={card.src} description={card.description} />
+        {services.map((service) => (
+          <Card
+            image={service.src}
+            description={service.description}
+            setIsModalOpen={setIsModalOpen}
+          />
         ))}
       </Con.Cards>
+      <Form isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </Con>
   );
 }
