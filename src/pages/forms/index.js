@@ -1,14 +1,14 @@
 import React from "react";
-import Mod from "./Modal.style";
+import Modd from "./Modal.form.style";
 import { TextField } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
-export default function Register() {
+export default function Form2() {
   return (
     <div>
-      <h1>Forms</h1>
-      <Mod id="register">
-        <Mod.main>
+      <h1>2nd Form</h1>
+      <Modd id="register">
+        <Modd.main>
           <h2> Online Registration </h2>
 
           <TextField
@@ -40,11 +40,11 @@ export default function Register() {
 
           <TextField label="Contact No." color="Secondary" variant="outlined" />
 
-          <Mod.button>
-            <Link to="/form2">Proceed!</Link>
-          </Mod.button>
-        </Mod.main>
-      </Mod>
+          <Modd.button>
+            <Link to="/">Done!</Link>
+          </Modd.button>
+        </Modd.main>
+      </Modd>
     </div>
   );
 }
