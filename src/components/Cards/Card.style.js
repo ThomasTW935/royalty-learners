@@ -4,33 +4,47 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
   border: 1px solid #000;
   border-radius: 10px;
-  padding: 1rem ;
+  height: 35rem;
 `;
 
 const Content = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  margin: 2rem;
 `;
 
+const Photo = styled.img`
+  max-width: 70%;
+  max-height: 70%;
+  padding-top: 2rem;
+`;
+const Tag = styled.div`
+  justify-content: center;
+  font-family: Lato, HelveticaNeueBold, HelveticaNeue-Bold,
+    "Helvetica Neue Bold", HelveticaBold, Helvetica-Bold, "Helvetica Bold",
+    HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+`;
 const Button = styled.button`
   background: pink;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   margin: 5px;
   width: 150px;
   border: none;
   border-radius: 10px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   cursor: pointer;
   align-content: center;
   &:hover {
+    transition: 0.5s;
     background: skyblue;
   }
 `;
 Container.Content = Content;
 Container.Button = Button;
+Container.Photo = Photo;
+Container.Title = Tag;
 export default Container;

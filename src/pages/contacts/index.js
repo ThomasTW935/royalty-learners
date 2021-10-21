@@ -1,4 +1,11 @@
 import React from "react";
+import { FacebookSquare } from "@styled-icons/fa-brands";
+import { Youtube } from "@styled-icons/bootstrap";
+import { Instagram } from "@styled-icons/bootstrap";
+import { Twitter } from "@styled-icons/evaicons-solid";
+import { Phone } from "@styled-icons/feather";
+import { Email } from "@styled-icons/material-outlined";
+
 import {
   Box,
   Container,
@@ -11,55 +18,52 @@ import {
 const Footer = () => {
   return (
     <Box id="contacts">
-      <h1 style={{ color: "White", textAlign: "center" }}>
-        GeeksforGeeks: A Computer Science Portal for Geeks
-      </h1>
+      <h1 style={{ color: "White", textAlign: "left" }}>Royalty Learners</h1>
       <Container>
-        <Row>
-          <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testidddmonials</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Services</Heading>
-            <FooterLink href="#">Writing</FooterLink>
-            <FooterLink href="#">Internships</FooterLink>
-            <FooterLink href="#">Coding</FooterLink>
-            <FooterLink href="#">Teaching</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Contact Us</Heading>
-            <FooterLink href="#">Uttar Pradesh</FooterLink>
-            <FooterLink href="#">Ahemdabad</FooterLink>
-            <FooterLink href="#">Indore</FooterLink>
-            <FooterLink href="#">Mumbai</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>Facebook</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>Twitter</span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>Youtube</span>
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
+        <Column>
+          <Heading>About Us</Heading>
+          <FooterLink href="#">Aim</FooterLink>
+          <FooterLink href="#">Vision</FooterLink>
+          <FooterLink href="#">Testimonials</FooterLink>
+        </Column>
+        <Column>
+          <Heading>Services</Heading>
+          <FooterLink href="#">Writing</FooterLink>
+          <FooterLink href="#">Internships</FooterLink>
+          <FooterLink href="#">Teaching</FooterLink>
+        </Column>
+        <Column>
+          <Heading>Contact Us</Heading>
+          <FooterLink href="#">
+            <Phone size={24} /> 09724456
+          </FooterLink>
+          <FooterLink href="#">
+            <Email size={24} />
+            RoyaltyLearners@gmail.com
+          </FooterLink>
+        </Column>
+        <Column>
+          <Heading>Social Media</Heading>
+          <FooterLink href="#">
+            <span></span>
+          </FooterLink>
+          <FooterLink href="#">
+            <span>
+              <Instagram size={24} />
+              Instagram
+            </span>
+          </FooterLink>
+          <FooterLink href="#">
+            <span>
+              <Twitter size={30} />
+            </span>
+          </FooterLink>
+          <FooterLink href="#">
+            <span>
+              <Youtube size={30} />
+            </span>
+          </FooterLink>
+        </Column>
       </Container>
     </Box>
   );

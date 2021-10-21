@@ -6,9 +6,6 @@ const Kevin = styled.div`
   grid-template-columns: auto;
   align-items: center;
   flex-wrap: nowrap;
-  width: 1519px;
-  height: 1000px;
-  margin: auto;
   padding: 0.5rem;
   background-image: url(${modern});
   background-repeat: no-repeat;

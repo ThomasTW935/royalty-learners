@@ -1,10 +1,11 @@
 import Container from "./Card.style";
 import { Link } from "react-router-dom";
 
-const Card = ({ image, description, setIsModalOpen }) => (
+const Card = ({ image, description, title, setIsModalOpen }) => (
   <Container>
+    <Container.Photo src={image} />
+    <span>{title}</span>
     <Container.Content>
-      <img src={image} alt={"logo"} />
       <span>{description}</span>
     </Container.Content>
     <Container.Button>
@@ -13,7 +14,7 @@ const Card = ({ image, description, setIsModalOpen }) => (
           setIsModalOpen(true);
         }}
       >
-        Process
+        Proceed
       </button>
     </Container.Button>
   </Container>

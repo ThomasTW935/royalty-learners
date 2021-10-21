@@ -15,13 +15,14 @@ const links = [
     display: "about us",
   },
   {
-    link: "contacts",
-    display: "contact us",
-  },
-  {
     link: "tutor",
     display: "teachers",
   },
+  {
+    link: "contacts",
+    display: "contact us",
+  },
+
   {
     link: "register",
     display: "Inquiry",

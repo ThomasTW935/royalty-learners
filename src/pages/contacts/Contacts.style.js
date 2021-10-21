@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  background: #7289da;
+  background: #5e68d0;
   position: bottom;
-  top: 100;
   width: 100%;
 
   @media (max-width: 1000px) {
@@ -13,24 +12,23 @@ export const Box = styled.div`
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  /* background: red; */
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
+  text-align: center;
+  gap: 0.5rem;
 `;
 
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
+  grid-gap: 10px;
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

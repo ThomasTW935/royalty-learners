@@ -1,61 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import Con from "./Form.style";
+import StudentInformation from "./StudentInformation";
+import StudentBackground from "./StudentBackground";
+import Overview from "./Overview";
 
 export default function Form({ isModalOpen, setIsModalOpen }) {
-  console.log(isModalOpen);
+  const [modal, setModal] = useState(0);
+  const [studentInformation, setStudentInformation] = useState({
+    name: "",
+    nickname: "",
+    birthday: "",
+    age: 0,
+    address: "",
+    studentLevel: "Grade 1",
+    parentGuardian: "",
+    contactNo: "",
+  });
+
+  function handleModalClose() {
+    setIsModalOpen(false);
+  }
+  console.log(studentInformation.name);
   return (
     <Con style={{ display: !isModalOpen ? "none" : "block" }}>
       <Con.Form>
         <h2>Online Registration</h2>
-        <Con.Close
-          onClick={() => {
-            setIsModalOpen(false);
-          }}
-        >
+        <Con.Close type="button" onClick={handleModalClose}>
           X
         </Con.Close>
-        <Con.Section>
-          <label>Student Name</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Nickname</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Birthday</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Age</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Address</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Student Level</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Parent/Guardian</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Section>
-          <label>Contact No.</label>
-          <input type="text" />
-        </Con.Section>
-        <Con.Buttons>
-          <button>Proceed</button>
-          <button
-            onClick={() => {
-              setIsModalOpen(false);
-            }}
-          >
-            Cancel
-          </button>
-        </Con.Buttons>
+        <StudentInformation
+          handleModalClose={handleModalClose}
+          modal={modal}
+          setModal={setModal}
+          studentInformation={studentInformation}
+          setStudentInformation={setStudentInformation}
+        />
+        <StudentBackground
+          handleModalClose={handleModalClose}
+          modal={modal}
+          setModal={setModal}
+          studentInformation={studentInformation}
+          setStudentInformation={setStudentInformation}
+        />
+        <Overview
+          handleModalClose={handleModalClose}
+          modal={modal}
+          studentInformation={studentInformation}
+        />
+        <span>{studentInformation.name}</span>
       </Con.Form>
     </Con>
   );

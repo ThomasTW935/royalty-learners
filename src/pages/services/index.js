@@ -10,9 +10,11 @@ export default function Services() {
     <Con id="services">
       <h1>Services</h1>
       <Con.Cards>
-        {services.map((service) => (
+        {services.map((service, index) => (
           <Card
+            key={index}
             image={service.src}
+            title={service.title}
             description={service.description}
             setIsModalOpen={setIsModalOpen}
           />

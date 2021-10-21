@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const Con = styled.div`
+  display: absolute;
   background-color: slategrey;
-  height: auto;
 `;
 
 const cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
   gap: 0.5rem;
 `;
 
