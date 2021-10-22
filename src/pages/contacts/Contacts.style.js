@@ -15,14 +15,13 @@ export const Container = styled.div`
   justify-content: space-evenly;
   gap: 2rem;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 0.5rem;
+  text-align: left;
 `;
 
 export const Row = styled.div`
@@ -37,19 +36,24 @@ export const Row = styled.div`
 
 export const FooterLink = styled.a`
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 18px;
   text-decoration: none;
 
   &:hover {
-    color: yellow;
+    color: #fbeb5c;
+    cursor: pointer;
     transition: 200ms ease-in;
   }
+`;
+
+export const BottomTab = styled.div`
+  align-items: right;
 `;
 
 export const Heading = styled.p`
   font-size: 24px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-weight: bold;
 `;

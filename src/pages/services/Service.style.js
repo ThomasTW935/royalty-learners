@@ -6,8 +6,6 @@ const Con = styled.div`
 `;
 
 const cards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
   gap: 0.5rem;
 `;
 

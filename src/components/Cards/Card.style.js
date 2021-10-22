@@ -6,13 +6,19 @@ const Container = styled.div`
   flex-direction: column;
   border: 1px solid #000;
   border-radius: 10px;
-  height: 35rem;
+  height: 33rem;
+  margin: 10px;
 `;
 
 const Content = styled.div`
   display: flex;
   justify-content: center;
   margin: 2rem;
+`;
+
+const Title = styled.div`
+  font-size: 2rem;
+  text-align: left;
 `;
 
 const Photo = styled.img`
@@ -27,6 +33,7 @@ const Tag = styled.div`
     HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2rem;
 `;
+
 const Button = styled.button`
   background: pink;
   color: #fff;
@@ -47,4 +54,5 @@ Container.Content = Content;
 Container.Button = Button;
 Container.Photo = Photo;
 Container.Title = Tag;
+Container.Title = Title;
 export default Container;

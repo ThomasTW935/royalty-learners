@@ -4,7 +4,7 @@ import math from "../assets/images/Math.png";
 const services = [
   {
     src: math,
-    title: "sdasdas",
+    title: "Pre-School",
     description:
       "Learn the basic problem solving in the following (x, -, *, /, a/b). Learn for all the major functions, formulas, equations, and theories you'll encounter in math class. ",
   },

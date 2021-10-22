@@ -1,11 +1,4 @@
 import React from "react";
-import { FacebookSquare } from "@styled-icons/fa-brands";
-import { Youtube } from "@styled-icons/bootstrap";
-import { Instagram } from "@styled-icons/bootstrap";
-import { Twitter } from "@styled-icons/evaicons-solid";
-import { Phone } from "@styled-icons/feather";
-import { Email } from "@styled-icons/material-outlined";
-
 import {
   Box,
   Container,
@@ -13,56 +6,79 @@ import {
   Column,
   FooterLink,
   Heading,
+  BottomTab,
 } from "./Contacts.style";
-
+import FootLogo from "../../assets/images/LogoIllustration1.png";
+import { Time } from "@styled-icons/boxicons-solid/Time";
+import { Email } from "@styled-icons/evaicons-solid/Email";
+import { Telephone } from "@styled-icons/foundation/Telephone";
+import { Mobile } from "@styled-icons/boxicons-solid/Mobile";
+import { Facebook } from "@styled-icons/boxicons-logos/Facebook";
+import { Address } from "@styled-icons/entypo/Address";
 const Footer = () => {
   return (
     <Box id="contacts">
-      <h1 style={{ color: "White", textAlign: "left" }}>Royalty Learners</h1>
       <Container>
         <Column>
-          <Heading>About Us</Heading>
-          <FooterLink href="#">Aim</FooterLink>
-          <FooterLink href="#">Vision</FooterLink>
-          <FooterLink href="#">Testimonials</FooterLink>
+          <img src={FootLogo} style={{ height: "200px", width: "350px" }} />
+          <Heading style={{ marginBottom: "2rem" }}>FOR INQUIRIES:</Heading>
+          <FooterLink>
+            <Email style={{ height: "30px", width: "30px" }} />
+            contactus@royaltylearners.ph
+          </FooterLink>
+          <FooterLink>
+            <Telephone style={{ height: "30px", width: "30px" }} />
+            (+8) 412-123-1234
+          </FooterLink>
+          <FooterLink>
+            <Mobile style={{ height: "30px", width: "30px" }} />
+            +63 935 415 0784
+          </FooterLink>
+          <FooterLink>
+            <Facebook style={{ height: "30px", width: "30px" }} />
+            www.facebook.com/royaltyleaners
+          </FooterLink>
+          <br />
+          <Heading>OPERATING HOURS:</Heading>
+          <text style={{ color: "white" }}>
+            <Time style={{ height: "30px", width: "30px" }} />
+            Monday-Friday 8am - 5pm
+          </text>
+          <br />
+          <br />
+          <Heading>TEACHERS</Heading>
         </Column>
+
         <Column>
-          <Heading>Services</Heading>
-          <FooterLink href="#">Writing</FooterLink>
-          <FooterLink href="#">Internships</FooterLink>
-          <FooterLink href="#">Teaching</FooterLink>
-        </Column>
-        <Column>
-          <Heading>Contact Us</Heading>
-          <FooterLink href="#">
-            <Phone size={24} /> 09724456
-          </FooterLink>
-          <FooterLink href="#">
-            <Email size={24} />
-            RoyaltyLearners@gmail.com
-          </FooterLink>
-        </Column>
-        <Column>
-          <Heading>Social Media</Heading>
-          <FooterLink href="#">
-            <span></span>
-          </FooterLink>
-          <FooterLink href="#">
-            <span>
-              <Instagram size={24} />
-              Instagram
-            </span>
-          </FooterLink>
-          <FooterLink href="#">
-            <span>
-              <Twitter size={30} />
-            </span>
-          </FooterLink>
-          <FooterLink href="#">
-            <span>
-              <Youtube size={30} />
-            </span>
-          </FooterLink>
+          <Heading style={{ marginTop: "5rem" }}>About Us</Heading>
+
+          <p style={{ color: "white", marginBottom: "5rem" }}>
+            Royalty Learning Center is a school for students with special
+            education
+            <br />
+            needs based in the Philippines. Our school has a team of special
+            <br />
+            education teachers and medical professionals to provide a proper
+            <br />
+            evaluation and best quality education for our students. We care for
+            the
+            <br />
+            growth of our students and we are willing to provide it for them.
+          </p>
+
+          <Heading>Find Us</Heading>
+          <text style={{ color: "white" }}>
+            <Address style={{ height: "30px", width: "30px" }} />
+            asdfasdfasdfasdfasd
+          </text>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <Heading>ADMINISTRATION</Heading>
         </Column>
       </Container>
     </Box>
