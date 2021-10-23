@@ -11,20 +11,20 @@ const services = [
 
   {
     src: logo,
-    title: "sdasdas",
-    description:
-      "There is no one who loves pain itself, who seeks after it and want",
-  },
-
-  {
-    src: logo,
-    title: "sdasdas",
+    title: "Primary School",
     description:
       "There is no one who loves pain itself, who seeks after it and want",
   },
   {
     src: dog,
-    title: "sdasdas",
+    title: "Lower Secondary School",
+    description:
+      "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
+      " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",
+  },
+  {
+    src: dog,
+    title: "Upper Secondary School",
     description:
       "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
       " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",

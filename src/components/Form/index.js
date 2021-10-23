@@ -47,7 +47,6 @@ export default function Form({ isModalOpen, setIsModalOpen }) {
           modal={modal}
           studentInformation={studentInformation}
         />
-        <span>{studentInformation.name}</span>
       </Con.Form>
     </Con>
   );

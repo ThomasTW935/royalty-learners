@@ -69,7 +69,7 @@ const Footer = () => {
           <Heading>Find Us</Heading>
           <text style={{ color: "white" }}>
             <Address style={{ height: "30px", width: "30px" }} />
-            asdfasdfasdfasdfasd
+            Blk. 68, Cacawaka Meet Road, Sowicked, PA 15612
           </text>
           <br />
           <br />

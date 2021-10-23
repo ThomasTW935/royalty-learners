@@ -25,15 +25,39 @@ export default function StudentInformation({
       </Con.Section>
       <Con.Section>
         <label>Nickname</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(e) =>
+            setStudentInformation((prev) => ({
+              ...prev,
+              nickname: e.target.value,
+            }))
+          }
+        />
       </Con.Section>
       <Con.Section>
         <label>Birthday</label>
-        <input type="date" />
+        <input
+          type="date"
+          onChange={(e) =>
+            setStudentInformation((prev) => ({
+              ...prev,
+              birthday: e.target.value,
+            }))
+          }
+        />
       </Con.Section>
       <Con.Section>
         <label>Address</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(e) =>
+            setStudentInformation((prev) => ({
+              ...prev,
+              address: e.target.value,
+            }))
+          }
+        />
       </Con.Section>
       <Con.Section>
         <label>Male:</label>
@@ -60,11 +84,27 @@ export default function StudentInformation({
       </Con.Section>
       <Con.Section>
         <label>Parent/Guardian</label>
-        <input type="text" />
+        <input
+          type="text"
+          onChange={(e) =>
+            setStudentInformation((prev) => ({
+              ...prev,
+              parentGuardian: e.target.value,
+            }))
+          }
+        />
       </Con.Section>
       <Con.Section>
         <label>Contact No.</label>
-        <input type="text" onChange={handleContactNo} />
+        <input
+          type="text"
+          onChange={(e) =>
+            setStudentInformation((prev) => ({
+              ...prev,
+              contactNo: e.target.value,
+            }))
+          }
+        />
       </Con.Section>
       <Con.Buttons>
         <button type="button" onClick={() => setModal(modal + 1)}>

@@ -18,7 +18,6 @@ const Content = styled.div`
 
 const Title = styled.div`
   font-size: 2rem;
-  text-align: left;
 `;
 
 const Photo = styled.img`
