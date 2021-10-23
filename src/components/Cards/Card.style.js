@@ -23,13 +23,11 @@ const Title = styled.div`
 const Photo = styled.img`
   max-width: 70%;
   max-height: 70%;
-  padding-top: 2rem;
+  padding-top: 1rem;
 `;
 const Tag = styled.div`
   justify-content: center;
-  font-family: Lato, HelveticaNeueBold, HelveticaNeue-Bold,
-    "Helvetica Neue Bold", HelveticaBold, Helvetica-Bold, "Helvetica Bold",
-    HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 2rem;
 `;
 

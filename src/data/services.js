@@ -1,5 +1,4 @@
 import logo from "../assets/images/sample logo.png";
-import dog from "../assets/images/hungry_tummy.png";
 import math from "../assets/images/Math.png";
 const services = [
   {
@@ -16,14 +15,14 @@ const services = [
       "There is no one who loves pain itself, who seeks after it and want",
   },
   {
-    src: dog,
+    src: math,
     title: "Lower Secondary School",
     description:
       "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
       " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",
   },
   {
-    src: dog,
+    src: logo,
     title: "Upper Secondary School",
     description:
       "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
