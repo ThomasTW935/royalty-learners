@@ -11,35 +11,19 @@ export default function StudentBackground({
   return (
     <div style={{ display: modal === 1 ? "block" : "none" }}>
       <Con.Section>
-        <label>Student Background</label>
+        <label>Background of the Student</label>
         <input type="text" />
       </Con.Section>
       <Con.Section>
-        <label>Student' Daily Schedule of Activitites</label>
+        <label>Student' Daily Schedule of Activities</label>
         <input type="text" />
       </Con.Section>
       <Con.Section>
-        <label>Birthday</label>
+        <label>Personality of the Student</label>
         <input type="text" />
       </Con.Section>
       <Con.Section>
-        <label>Age</label>
-        <input type="text" />
-      </Con.Section>
-      <Con.Section>
-        <label>Address</label>
-        <input type="text" />
-      </Con.Section>
-      <Con.Section>
-        <label>Student Level</label>
-        <input type="text" />
-      </Con.Section>
-      <Con.Section>
-        <label>Parent/Guardian</label>
-        <input type="text" />
-      </Con.Section>
-      <Con.Section>
-        <label>Contact No.</label>
+        <label>Daily / Monthly Goals of the Parents </label>
         <input type="text" />
       </Con.Section>
       <Con.Buttons>

@@ -8,17 +8,21 @@ export default function Overview({
 }) {
   return (
     <div style={{ display: modal === 2 ? "block" : "none" }}>
-      <span>name: {studentInformation.name}</span>
+      <span>Student Name: {studentInformation.name}</span>
       <br />
-      <span>nickname: {studentInformation.nickname}</span>
+      <span>Nickname: {studentInformation.nickname}</span>
       <br />
-      <span>birthday: {studentInformation.birthday}</span>
+      <span>Language at Home: {studentInformation.languageAtHome}</span>
       <br />
-      <span>address: {studentInformation.address}</span>
+      <span>Birthday: {studentInformation.birthday}</span>
       <br />
-      <span>parentGuardian: {studentInformation.parentGuardian}</span>
+      <span>Address: {studentInformation.address}</span>
       <br />
-      <span>contactNo: {studentInformation.contactNo}</span>
+      <span>Student Level: {studentInformation.studentLevel}</span>
+      <br />
+      <span>Parent / Guardian: {studentInformation.parentGuardian}</span>
+      <br />
+      <span>Contact Number: {studentInformation.contactNo}</span>
       <Con.Buttons>
         <button onClick={handleModalClose}>Cancel</button>
       </Con.Buttons>

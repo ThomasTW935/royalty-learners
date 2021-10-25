@@ -11,7 +11,6 @@ const Container = styled.div`
 
 const Content = styled.div`
   display: flex;
-  justify-content: space-between;
   align-self: left;
   padding-left: 2rem;
 `;
@@ -27,10 +26,10 @@ const Photo = styled.img`
   margin-right: 1rem;
   align-self: left;
 `;
-const Tag = styled.div`
-  justify-content: center;
-  font-family: "Merriweather", serif;
-  font-size: 2rem;
+
+const ButtonCenter = styled.div`
+  display: flex;
+  align-self: center;
 `;
 
 const Button = styled.button`
@@ -40,7 +39,7 @@ const Button = styled.button`
   color: black;
   align-self: center;
   margin: 5px;
-  width: 100px;
+  width: 10rem;
   padding: 0.5rem;
   border: none;
   border-radius: 10px;
@@ -53,6 +52,6 @@ const Button = styled.button`
 Container.Content = Content;
 Container.Button = Button;
 Container.Photo = Photo;
-Container.Title = Tag;
 Container.Title = Title;
+Container.Center = ButtonCenter;
 export default Container;

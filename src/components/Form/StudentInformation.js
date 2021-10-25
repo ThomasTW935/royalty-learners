@@ -36,6 +36,15 @@ export default function StudentInformation({
         />
       </Con.Section>
       <Con.Section>
+        <label>Language At Home</label>
+        <input
+          type="text"
+          onChange={(e) =>
+            setStudentInformation((prev) => ({ ...prev, name: e.target.value }))
+          }
+        />
+      </Con.Section>
+      <Con.Section>
         <label>Birthday</label>
         <input
           type="date"

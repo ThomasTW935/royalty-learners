@@ -10,7 +10,7 @@ const Card = ({ image, description, title, setIsModalOpen, setInfoModal }) => (
       <Container.Photo src={image} />
       <span>{description}</span>
     </Container.Content>
-    <Container.Content>
+    <Container.Center>
       <Container.Button
         onClick={() => {
           setIsModalOpen(true);
@@ -23,30 +23,9 @@ const Card = ({ image, description, title, setIsModalOpen, setInfoModal }) => (
           setInfoModal(true);
         }}
       >
-        Math
+        More Details
       </Container.Button>
-      <Container.Button
-        onClick={() => {
-          setInfoModal(true);
-        }}
-      >
-        Math
-      </Container.Button>
-      <Container.Button
-        onClick={() => {
-          setInfoModal(true);
-        }}
-      >
-        Math
-      </Container.Button>
-      <Container.Button
-        onClick={() => {
-          setInfoModal(true);
-        }}
-      >
-        Math
-      </Container.Button>
-    </Container.Content>
+    </Container.Center>
   </Container>
 );
 

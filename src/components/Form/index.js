@@ -9,10 +9,11 @@ export default function Form({ isModalOpen, setIsModalOpen }) {
   const [studentInformation, setStudentInformation] = useState({
     name: "",
     nickname: "",
+    languageAtHome: "",
     birthday: "",
     age: 0,
     address: "",
-    studentLevel: "Grade 1",
+    studentLevel: "",
     parentGuardian: "",
     contactNo: "",
   });

@@ -4,7 +4,6 @@ import Con from "./Service.style";
 import { services } from "../../data/services.js";
 import Form from "../../components/Form";
 import ServiceInfo from "../../components/Form/ServiceInfo";
-//import English from "../../pages/forms/english";
 
 export default function Services() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,8 +23,8 @@ export default function Services() {
           />
         ))}
       </Con.Cards>
-      <ServiceInfo infoModal={infoModal} setInfoModal={setInfoModal} />
       <Form isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <ServiceInfo infoModal={infoModal} setInfoModal={setInfoModal} />
     </Con>
   );
 }
