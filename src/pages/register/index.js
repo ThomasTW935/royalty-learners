@@ -7,7 +7,7 @@ export default function Register() {
   return (
     <div>
       <h1>Forms</h1>
-      <Mod id="register">
+      <Mod>
         <Mod.main>
           <h2> Online Registration </h2>
 

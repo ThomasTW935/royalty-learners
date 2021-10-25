@@ -6,19 +6,23 @@ const Card = ({ image, description, title, setIsModalOpen }) => (
     <Container.Title>
       <span>{title}</span>
     </Container.Title>
-    <Container.Photo src={image} />
     <Container.Content>
+      <Container.Photo src={image} />
       <span>{description}</span>
     </Container.Content>
-    <Container.Button>
-      <button
+    <Container.Content>
+      <Container.Button
         onClick={() => {
           setIsModalOpen(true);
         }}
       >
         Proceed
-      </button>
-    </Container.Button>
+      </Container.Button>
+      <Container.Button>Math</Container.Button>
+      <Container.Button>Math</Container.Button>
+      <Container.Button>Math</Container.Button>
+      <Container.Button>Math</Container.Button>
+    </Container.Content>
   </Container>
 );
 

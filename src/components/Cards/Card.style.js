@@ -2,28 +2,30 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
   flex-direction: column;
   border: 1px solid #000;
   border-radius: 10px;
-  height: 33rem;
   margin: 10px;
+  padding-left: 1rem;
 `;
 
 const Content = styled.div`
   display: flex;
-  justify-content: center;
-  margin: 2rem;
+  justify-content: space-between;
+  align-self: left;
+  padding-left: 2rem;
 `;
 
 const Title = styled.div`
   font-size: 2rem;
+  align-self: left;
 `;
 
 const Photo = styled.img`
   max-width: 70%;
   max-height: 70%;
-  padding-top: 1rem;
+  margin-right: 1rem;
+  align-self: left;
 `;
 const Tag = styled.div`
   justify-content: center;
@@ -32,16 +34,17 @@ const Tag = styled.div`
 `;
 
 const Button = styled.button`
-  background: pink;
-  color: #fff;
-  padding: 5px;
+  display: flex;
+  background: royalblue;
+  justify-content: space-evenly;
+  color: black;
+  align-self: center;
   margin: 5px;
-  width: 150px;
+  width: 100px;
+  padding: 0.5rem;
   border: none;
   border-radius: 10px;
-  box-sizing: content-box;
   cursor: pointer;
-  align-content: center;
   &:hover {
     transition: 0.5s;
     background: skyblue;

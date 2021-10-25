@@ -8,6 +8,7 @@ import {
   Heading,
   BottomTab,
 } from "./Contacts.style";
+import Map from "../../assets/images/map.png";
 import FootLogo from "../../assets/images/LogoIllustration1.png";
 import { Time } from "@styled-icons/boxicons-solid/Time";
 import { Email } from "@styled-icons/evaicons-solid/Email";
@@ -46,6 +47,9 @@ const Footer = () => {
           </text>
           <br />
           <br />
+          <br />
+          <br />
+          <br />
           <Heading>TEACHERS</Heading>
         </Column>
 
@@ -71,13 +75,7 @@ const Footer = () => {
             <Address style={{ height: "30px", width: "30px" }} />
             Blk. 68, Cacawaka Meet Road, Sowicked, PA 15612
           </text>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <img src={Map} style={{ height: "250px", width: "450px" }} />
           <Heading>ADMINISTRATION</Heading>
         </Column>
       </Container>

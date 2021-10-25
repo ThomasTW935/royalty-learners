@@ -24,8 +24,8 @@ const links = [
   },
 
   {
-    link: "register",
-    display: "Inquiry",
+    link: "inquiry",
+    display: "inquiry",
   },
 ];
 

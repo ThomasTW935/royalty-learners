@@ -6,6 +6,9 @@ const Con = styled.div`
 `;
 
 const cards = styled.div`
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
   gap: 0.5rem;
 `;
 

@@ -2,7 +2,7 @@ import Home from "./home";
 import AboutUs from "./about-us";
 import Contacts from "./contacts";
 import Services from "./services";
-import Register from "./register";
+import Inquiry from "./inquiry";
 import Tutor from "./tutor";
 
-export { Home, AboutUs, Contacts, Services, Tutor, Register };
+export { Home, AboutUs, Contacts, Services, Tutor, Inquiry };

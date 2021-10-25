@@ -1,6 +1,6 @@
 import React from "react";
 import Board from "./Home.style";
-import { Contacts, AboutUs, Tutor } from "../";
+import { Contacts, AboutUs, Tutor, Inquiry } from "../";
 import Services from "../services";
 
 export default function Home() {

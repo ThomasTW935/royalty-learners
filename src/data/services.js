@@ -1,4 +1,3 @@
-import logo from "../assets/images/sample logo.png";
 import math from "../assets/images/Math.png";
 const services = [
   {
@@ -9,7 +8,7 @@ const services = [
   },
 
   {
-    src: logo,
+    src: math,
     title: "Primary School",
     description:
       "There is no one who loves pain itself, who seeks after it and want",
@@ -22,7 +21,7 @@ const services = [
       " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",
   },
   {
-    src: logo,
+    src: math,
     title: "Upper Secondary School",
     description:
       "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
