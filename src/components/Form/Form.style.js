@@ -16,7 +16,8 @@ const form = styled.form`
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 25ch;
+  min-height: 75ch;
+  min-width: 70ch;
   transform: translate(-50%, -50%);
   padding: 1rem;
   background: white;
@@ -25,6 +26,12 @@ const form = styled.form`
   gap: 0.75rem;
   border-radius: 5px;
   z-index: 100;
+`;
+
+const title = styled.div`
+  background-color: royalblue;
+  font-size: 18px;
+  padding-left: 1rem;
 `;
 
 const section = styled.section`
@@ -62,5 +69,5 @@ Con.Form = form;
 Con.Section = section;
 Con.Close = close;
 Con.Buttons = buttons;
-
+Con.Title = title;
 export default Con;

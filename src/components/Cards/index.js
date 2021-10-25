@@ -1,7 +1,7 @@
 import Container from "./Card.style";
 import { Link } from "react-router-dom";
 
-const Card = ({ image, description, title, setIsModalOpen }) => (
+const Card = ({ image, description, title, setIsModalOpen, setInfoModal }) => (
   <Container>
     <Container.Title>
       <span>{title}</span>
@@ -18,10 +18,34 @@ const Card = ({ image, description, title, setIsModalOpen }) => (
       >
         Proceed
       </Container.Button>
-      <Container.Button>Math</Container.Button>
-      <Container.Button>Math</Container.Button>
-      <Container.Button>Math</Container.Button>
-      <Container.Button>Math</Container.Button>
+      <Container.Button
+        onClick={() => {
+          setInfoModal(true);
+        }}
+      >
+        Math
+      </Container.Button>
+      <Container.Button
+        onClick={() => {
+          setInfoModal(true);
+        }}
+      >
+        Math
+      </Container.Button>
+      <Container.Button
+        onClick={() => {
+          setInfoModal(true);
+        }}
+      >
+        Math
+      </Container.Button>
+      <Container.Button
+        onClick={() => {
+          setInfoModal(true);
+        }}
+      >
+        Math
+      </Container.Button>
     </Container.Content>
   </Container>
 );

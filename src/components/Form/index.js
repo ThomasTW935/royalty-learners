@@ -24,7 +24,9 @@ export default function Form({ isModalOpen, setIsModalOpen }) {
   return (
     <Con style={{ display: !isModalOpen ? "none" : "block" }}>
       <Con.Form>
-        <h2>Online Registration</h2>
+        <Con.Title>
+          <h2>Online Registration</h2>
+        </Con.Title>
         <Con.Close type="button" onClick={handleModalClose}>
           X
         </Con.Close>
