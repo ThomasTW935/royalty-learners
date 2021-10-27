@@ -1,21 +1,10 @@
 import styled from "styled-components";
 
-export const Box = styled.div`
-  background: #5e68d0;
-  position: bottom;
-  width: 100%;
-
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
-  }
-`;
-
 export const Container = styled.div`
+  padding-top: 30px;
   display: flex;
   justify-content: space-evenly;
-  gap: 2rem;
-  width: 100%;
-  margin-top: 1rem;
+  background: #5e68d0;
 `;
 
 export const Column = styled.div`
@@ -48,11 +37,11 @@ export const FooterLink = styled.a`
 `;
 
 export const BottomTab = styled.div`
-  align-items: right;
+  justify-content: space-between;
 `;
 
 export const Heading = styled.p`
-  font-size: 24px;
+  font-size: 23px;
   color: #fff;
   margin-bottom: 10px;
   font-weight: bold;

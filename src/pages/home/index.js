@@ -9,11 +9,20 @@ export default function Home() {
       <Board id="home">
         <div>
           <h1>
-            <span style={{ color: "#45b0cb" }}>Learn</span>
-            <span style={{ color: "#f4aa1b" }}>Create</span>
-            <span style={{ color: "#8fc049" }}>Achieve</span>
+            <span style={{ color: "#133E82" }}>Every Child </span>
+            <br />
+            <span style={{ color: "#F1AB07" }}>Needs an Opportunity</span>
+            <br />
+            <span style={{ color: "#133E82" }}>To Grow.</span>
+            <br />
           </h1>
-          <h3>Growth Of The Student Is Our Priority</h3>
+          <h2 style={{ color: "white" }}>
+            <span style={{ color: "#31A9B7" }}>
+              The Royalty Learning Center{" "}
+            </span>
+            <span style={{ color: "#f4aa1b" }}>Is Here </span>
+            <span style={{ color: "#133E82" }}>to Provide It.</span>
+          </h2>
         </div>
       </Board>
       <Services />

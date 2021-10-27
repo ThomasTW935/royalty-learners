@@ -16,13 +16,14 @@ const Content = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 2rem;
+  font-size: 2.5rem;
   align-self: left;
+  font-family: "Cardo", Georgia, "Times New Roman", serif;
 `;
 
 const Photo = styled.img`
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 20%;
+  max-height: 20%;
   margin-right: 1rem;
   align-self: left;
 `;

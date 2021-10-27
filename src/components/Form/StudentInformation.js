@@ -40,7 +40,10 @@ export default function StudentInformation({
         <input
           type="text"
           onChange={(e) =>
-            setStudentInformation((prev) => ({ ...prev, name: e.target.value }))
+            setStudentInformation((prev) => ({
+              ...prev,
+              languageAtHome: e.target.value,
+            }))
           }
         />
       </Con.Section>

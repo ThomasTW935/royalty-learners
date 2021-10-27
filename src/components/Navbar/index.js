@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/RoyaltyLearnersLogo.png";
+import logo from "../../assets/images/LogoIllustration1.png";
 import logo1 from "../../assets/icons/search-icon.png";
 import Nav from "./Navbar.style";
-import AcUnitIcon from "@material-ui/icons/AcUnit";
-// import AcUnitIcon from '@mui/icons-material/AcUnit';
 
 const links = [
   {

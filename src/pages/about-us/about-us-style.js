@@ -1,15 +1,21 @@
 import styled from "styled-components";
-import Architecture_Caruana from "../../assets/images/Architecture_Caruana.png";
 
-const Box = styled.div`
+export const Container = styled.div`
   display: flex;
-  grid-template-columns: auto;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  background-image: url(${Architecture_Caruana});
-  background-repeat: no-repeat;
-  background-size: cover;
+  color: linen;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+  padding-top: 30px;
 `;
-
-export default Box;
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+`;
+export const Heading = styled.p`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: bold;
+`;
