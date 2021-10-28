@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Con = styled.div`
   display: absolute;
-  background-color: slategrey;
+  background-color: #fffff0;
 `;
 
 const cards = styled.div`

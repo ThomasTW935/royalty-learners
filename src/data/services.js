@@ -1,29 +1,29 @@
-import math from "../assets/images/Math.png";
+import cover from "../assets/images/cover.jpg";
 import icon from "../assets/images/Background_1.jpg";
+import cam from "../assets/images/cam.jpg";
+import natures from "../assets/images/natures.jpg";
 const services = [
   {
-    src: icon,
+    src: cover,
     title: "Pre-School",
     description:
-      "Learn the basic problem solving in the following (x, -, *, /, a/b). Learn for all the major functions, formulas, equations, and theories you'll encounter in math class. ",
+      "The Royalty Learning Center creates a growth pathway for the children during their young age. Our faculties and facilities are built to support learning of the children enrolled in pre-school program. We will provide quality education for your children together with social, emotional, and behavioural development. Developing these important aspects of the child at a young age can lead to a better life. It only starts with shapes, colors, numbers, and letters to promote fun learning and a step to progress.",
   },
 
   {
     src: icon,
     title: "Primary School",
     description:
-      "There is no one who loves pain itself, who seeks after it and want",
+      "TThe Royalty Learning Center takes the first formal education of the children with great importance. We created the primary education program to match with the rapid developing phase of every child. The primary education is the place where the child defines and exhibits how they learn, therefore a pivotal piece of information can be extracted during this program that can greatly help for the growth of a child in the future. ",
   },
   {
-    src: math,
-    title: "Lower Secondary School",
-    description:
-      "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
-      " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",
+    src: cam,
+    title: "Junior High School",
+    description: "Our school is blah blah blah..",
   },
   {
-    src: math,
-    title: "Upper Secondary School",
+    src: natures,
+    title: "Senior High School",
     description:
       "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
       " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",

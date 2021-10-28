@@ -7,6 +7,7 @@ export const Container = styled.div`
   gap: 2rem;
   width: 100%;
   padding-top: 30px;
+  background: #72baf3;
 `;
 export const Column = styled.div`
   display: flex;

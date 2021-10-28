@@ -13,6 +13,8 @@ const Content = styled.div`
   display: flex;
   align-self: left;
   padding-left: 2rem;
+  color: black;
+  font-size: 1.5rem;
 `;
 
 const Title = styled.div`
@@ -22,8 +24,8 @@ const Title = styled.div`
 `;
 
 const Photo = styled.img`
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 30%;
+  max-height: 30%;
   margin-right: 1rem;
   align-self: left;
 `;

@@ -6,7 +6,7 @@ const Kevin = styled.div`
   align-items: center;
   flex-wrap: nowrap;
   padding: 0.5rem;
-  background-color: blue;
+  background-color: #fffcc9;
 `;
 
 export default Kevin;
