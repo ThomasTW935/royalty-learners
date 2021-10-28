@@ -50,7 +50,7 @@ const Footer = () => {
         <br />
         <Heading>TEACHERS</Heading>
         <br />
-        <text style={{ color: "white", fontSize: "0.7rem" }}>
+        <text style={{ color: "white", fontSize: "0.8rem" }}>
           <Copyright style={{ height: "15px", width: "15px" }} />
           2021 RoyaltyLearners Pte Ltd Reg.No.20123789123D All Right Reserved.
         </text>
@@ -85,7 +85,7 @@ const Footer = () => {
         <img src={Map} style={{ height: "200px", width: "400px" }} />
 
         <Heading style={{ marginTop: ".5rem" }}></Heading>
-        <BottomTab style={{ color: "white", fontSize: "0.8rem" }}>
+        <BottomTab style={{ color: "white", fontSize: "0.9rem" }}>
           <span style={{ marginRight: "2rem" }}>•Blog</span>{" "}
           <span style={{ marginRight: "2rem" }}>•Contact</span>{" "}
           <span style={{ marginRight: "2rem" }}>•Jobs</span>

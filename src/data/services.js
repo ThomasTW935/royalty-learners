@@ -1,14 +1,15 @@
 import math from "../assets/images/Math.png";
+import icon from "../assets/images/Background_1.jpg";
 const services = [
   {
-    src: math,
+    src: icon,
     title: "Pre-School",
     description:
       "Learn the basic problem solving in the following (x, -, *, /, a/b). Learn for all the major functions, formulas, equations, and theories you'll encounter in math class. ",
   },
 
   {
-    src: math,
+    src: icon,
     title: "Primary School",
     description:
       "There is no one who loves pain itself, who seeks after it and want",
