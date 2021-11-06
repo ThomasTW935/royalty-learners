@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ image, description, title, setIsModalOpen, setInfoModal }) => (
   <Container>
     <Container.Title>
-      <span>{title}</span>
+      {title}
     </Container.Title>
     <Container.Content>
       <Container.Photo src={image} />
