@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../../components/Cards";
+import Card from "../Cards";
 import Con from "./Service.style";
 import { services } from "../../data/services.js";
 import Form from "../../components/Form";

@@ -1,33 +1,34 @@
 import React from "react";
-import Board from "./Home.style";
-import { Contacts, AboutUs, Tutor, Inquiry } from "../";
-import Services from "../services";
+import HeroSection from "../../components/HeroSection";
+import Services from "../../components/Services";
+import Contacts from "../../components/Contacts";
+import AboutUs from "../../components/AboutUs";
+import { ClipboardCheckmark } from "@styled-icons/fluentui-system-regular";
+import { Like, UserPlus } from "@styled-icons/boxicons-regular";
 
 export default function Home() {
   return (
     <main>
-      <Board id="home">
-        <div>
-          <h1>
-            <span style={{ color: "#1491CD" }}>Every Child </span>
-            <br />
-            <span style={{ color: "#F7AE05" }}>Needs an Opportunity</span>
-            <br />
-            <span style={{ color: "#223F16" }}>To Grow.</span>
-            <br />
-          </h1>
-          <h2 style={{ color: "white" }}>
-            <span style={{ color: "#1491CD" }}>
-              The Royalty Learning Center{" "}
-            </span>
-            <span style={{ color: "#f4aa1b" }}>Is Here </span>
-            <span style={{ color: "#223F16" }}>to Provide It.</span>
-          </h2>
-        </div>
-      </Board>
+      <HeroSection />
+      <div>
+        <h2> Request a Tutor via our simple 3-Step Process </h2>
+        <ul>
+          <li>
+            <ClipboardCheckmark width={30} height={30} />
+            <p>asdlkmalskdm</p>
+          </li>
+          <li>
+            <Like width={30} height={30} />
+            <p>asdlkmalskdm</p>
+          </li>
+          <li>
+            <UserPlus width={30} height={30} />
+            <p>asdlkmalskdm</p>
+          </li>
+        </ul>
+      </div>
       <Services />
       <AboutUs />
-      <Tutor />
       <Contacts />
     </main>
   );

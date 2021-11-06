@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Con = styled.div`
-  display: absolute;
   background-color: #fffff0;
 `;
 
