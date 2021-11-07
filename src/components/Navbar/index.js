@@ -48,14 +48,6 @@ export default function Navbar() {
           );
         })}
       </Nav.List>
-      <a href="#">
-        <img
-          src={logo1}
-          alt="logo"
-          className="logo1"
-          style={{ width: "auto", height: "3.5rem" }}
-        />
-      </a>
     </Nav>
   );
 }

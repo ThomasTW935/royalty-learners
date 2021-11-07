@@ -8,10 +8,11 @@ import { Mobile } from "@styled-icons/boxicons-solid/Mobile";
 import { Facebook } from "@styled-icons/boxicons-logos/Facebook";
 import { Address } from "@styled-icons/entypo/Address";
 import { Copyright } from "@styled-icons/boxicons-regular/Copyright";
+import Con from './Contacts.style';
 
 export default function Contacts() {
   return (
-    <div>
+    <Con>
       <div>
         <img src={FootLogo} alt="bg" />
       </div>
@@ -69,6 +70,6 @@ export default function Contacts() {
         <h2>Find Us</h2>
         
       </div> */}
-    </div>
+      </Con>
   );
 }

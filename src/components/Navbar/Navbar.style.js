@@ -6,15 +6,17 @@ const Nav = styled.nav`
   align-items: center;
   position: sticky;
   top: 0;
-  background: whitesmoke;
+  background: #FFFDD0;
 `;
 
 const logo = styled.a`
-  width: 125px;
-  height: 100%;
+  width: 300px;
+  height: 50%;
   img {
+    background: transparent;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
