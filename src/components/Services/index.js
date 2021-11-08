@@ -10,19 +10,26 @@ export default function Services() {
   const [infoModal, setInfoModal] = useState(false);
   return (
     <Con id="services">
-      <h1>Services</h1>
-      <Con.Cards>
+      {/* <h1>Services</h1> */}
+      <Con.Services>
         {services.map((service, index) => (
-          <Card
-            key={index}
-            image={service.src}
-            title={service.title}
-            description={service.description}
-            setIsModalOpen={setIsModalOpen}
-            setInfoModal={setInfoModal}
-          />
+          // <Card
+          //   key={index}
+          //   image={service.src}
+          //   title={service.title}
+          //   description={service.description}
+          //   setIsModalOpen={setIsModalOpen}
+          //   setInfoModal={setInfoModal}
+          // />
+          <Con.Service>
+            <h3>{service.title}</h3>
+            <div>
+              <img src={service.src} alt={service.title}/>
+            </div>
+            <p>{service.description}</p>
+          </Con.Service>
         ))}
-      </Con.Cards>
+      </Con.Services>
       <Form isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <ServiceInfo infoModal={infoModal} setInfoModal={setInfoModal} />
     </Con>
