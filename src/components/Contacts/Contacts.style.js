@@ -11,14 +11,13 @@ flex-direction:column;
     object-fit: cover;
   }
 `;
-const Section= styled.section`
+const Section = styled.section`
 display:flex;
 justify-content:space-around;
-
+font-size:2px;
 `;
  const h2= styled.h2`
  display:flex;
-
 `;
 
 
