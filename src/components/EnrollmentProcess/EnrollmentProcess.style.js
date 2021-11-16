@@ -25,6 +25,9 @@ const listItem = styled.li`
     border-radius: 50%;
     background: #f1f4f7;
   }
+  p{
+    text-align:center;
+  }
 `;
 
 Con.Title = title;

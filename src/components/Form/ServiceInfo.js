@@ -2,7 +2,6 @@ import React from "react";
 import Con from "./Form.style";
 
 export default function ServiceInfo({ infoModal, setInfoModal }) {
-  console.log(`Info: ${infoModal}`);
 
   function handleModalClose() {
     setInfoModal(false);
@@ -13,7 +12,7 @@ export default function ServiceInfo({ infoModal, setInfoModal }) {
         <Con.Title>
           <h2>Details</h2>
         </Con.Title>
-        <heading style={{ fontWeight: "Bold" }}> Mathematics</heading>
+        <h2 style={{ fontWeight: "Bold" }}> Mathematics</h2>
         <span>
           This subject provides a basic math concept that will help the students
           to apply
@@ -27,7 +26,7 @@ export default function ServiceInfo({ infoModal, setInfoModal }) {
           number sequencing, matching, sorting, and memory.
         </span>
 
-        <heading style={{ fontWeight: "Bold" }}> English</heading>
+        <h2 style={{ fontWeight: "Bold" }}> English</h2>
         <span>
           This subject provides explicit, systematic instruction in vocabulary.
           Our students
@@ -38,7 +37,7 @@ export default function ServiceInfo({ infoModal, setInfoModal }) {
           will develop a rich understanding of their meaning and use.
         </span>
 
-        <heading style={{ fontWeight: "Bold" }}> Science</heading>
+        <h2 style={{ fontWeight: "Bold" }}> Science</h2>
         <span>
           This subject provides developmentally appropriate activities that will
           help students

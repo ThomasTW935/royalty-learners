@@ -16,7 +16,7 @@ export default function index() {
             <ClipboardCheckmark width={30} height={30} color="#0E7BE5" />
           </div>
           <h3>Request</h3>
-          <p>For a suitable tutor Via a 3-min call</p>
+          <p>Find a suitable tutor Via a 3-min call</p>
         </Con.ListItem>
         <Con.ListItem>
         <img src={Arrow1} alt="arrow" />

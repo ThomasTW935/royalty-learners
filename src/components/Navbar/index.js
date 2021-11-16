@@ -35,9 +35,10 @@ export default function Navbar() {
         <img src={logo} alt="logo" />
       </Nav.Logo>
       <Nav.List>
-        {links.map((link) => {
+        {links.map((link,index) => {
           return (
-            <Nav.Item
+            <Nav.Item 
+              key={index}
               active={active === link.link ? 1 : 0}
               onClick={() => {
                 setActive(link.link);

@@ -11,7 +11,6 @@ export default function StudentInformation({
   function handleContactNo(e) {
     console.log(e.target.value);
   }
-  console.log(modal);
   return (
     <div style={{ display: modal === 0 ? "block" : "none" }}>
       <Con.Section>

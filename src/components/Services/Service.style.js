@@ -1,15 +1,7 @@
 import styled from "styled-components";
+import ImgCon from '../../core-ui/ImgCon.style'
 
-const Con = styled.div`
-  background-color: #fffde0;
-`;
-
-const services = styled.section`
-  &>div:nth-child(even){
-      background: #F3E6B5;
-  }
-`;
-const service = styled.div`
+const Service = styled.div`
   display: grid;
   grid-template: 1fr /1fr 2fr;
   gap: 1em;
@@ -22,7 +14,9 @@ const service = styled.div`
   }
 `
 
-Con.Services = services;
-Con.Service = service;
+const buttonCon = styled.div``
 
-export default Con;
+Service.ImgCon = ImgCon
+Service.ButtonCon = buttonCon
+
+export default Service

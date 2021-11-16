@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "../Cards";
-import Con from "./Service.style";
+import Con from "./Services.style";
 import { services } from "../../data/services.js";
 import Form from "../../components/Form";
 import ServiceInfo from "../../components/Form/ServiceInfo";
@@ -21,12 +21,16 @@ export default function Services() {
           //   setIsModalOpen={setIsModalOpen}
           //   setInfoModal={setInfoModal}
           // />
-          <Con.Service>
+          <Con.Service key={index}>
             <h3>{service.title}</h3>
             <div>
               <img src={service.src} alt={service.title}/>
             </div>
-            <p>{service.description}</p>
+              <p>{service.description}</p>
+              <div>
+                <button>Register</button>
+                <button>See More</button>
+              </div>
           </Con.Service>
         ))}
       </Con.Services>
