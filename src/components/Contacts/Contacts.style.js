@@ -12,12 +12,13 @@ padding-top: 30px;
   display: flex;
   flex-direction: column;
   text-align: left;
+
 `;
 
 const Icons = styled.a`
   color: #fff;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 5px;
   text-decoration: none;
 
   &:hover {
@@ -38,7 +39,6 @@ width: 380px;
 margin-bottom: -100px;
 font-size:10px;
 `;
-
 const Head = styled.p`
 font-size: 15px;
 color: #fff;
