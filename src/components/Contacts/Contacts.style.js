@@ -29,7 +29,7 @@ const Icons = styled.a`
 `;
 
 const Texts = styled.p`
-font-size: 15px;
+font-size: 12px;
 text-decoration: none;
 `;
 

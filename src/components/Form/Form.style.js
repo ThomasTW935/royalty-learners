@@ -21,10 +21,10 @@ const form = styled.form`
   transform: translate(-50%, -50%);
   padding: 1rem;
   background: white;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  border-radius: 5px;
   z-index: 100;
 `;
 

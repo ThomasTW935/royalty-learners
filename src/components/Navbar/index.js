@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/LogoIllustration1.png";
 import logo1 from "../../assets/icons/search-icon.png";
-import Nav from "./Navbar.style";
+import Nav from "../../core-ui/Navbar.style";
 
 const links = [
   {

@@ -23,7 +23,7 @@ export default function Contacts() {
             id="name"
             placeholder="Enter Name:"
             type="text"
-            style={{ width: 250 }}
+            style={{ width: 250, marginBottom:10 }}
           />
         </div>
         <div>
@@ -31,14 +31,14 @@ export default function Contacts() {
             id="email"
             placeholder="Enter Email:"
             type="text"
-            style={{ width: 250 }}
+            style={{ width: 250, marginBottom:10 }}
           />
-        </div>
+        </div>  
         <label for="msg" style={{ color: "white" }}>
           Message:
         </label>
-        <textarea id="name" type="text" style={{ width: 250 }} />
-        <Con.Button type="button" style={{ width: 250 }}>
+        <textarea id="name" type="text" style={{ width: 250,marginBottom:10 }} />
+        <Con.Button type="button" style={{ width: 250,marginBottom:10 }}>
           Send
         </Con.Button>
 
