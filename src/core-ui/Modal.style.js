@@ -10,11 +10,11 @@ const Modal = styled.div`
   padding: 1rem;
   background: white;
   border-radius: 5px;
-  display: ${props=> props.modal ? "flex" : "none"};
-  `;
-  
-  const bg = styled.div`
-  display: ${props=> props.modal ? "flex" : "none"};
+  display: ${(props) => (props.modal ? "flex" : "none")};
+`;
+
+const bg = styled.div`
+  display: ${(props) => (props.modal ? "flex" : "none")};
   position: fixed;
   top: 0;
   left: 0;
@@ -23,6 +23,13 @@ const Modal = styled.div`
   background: rgba(0, 0, 0, 0.5);
 `;
 
+const close = styled.button`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+`;
+
 Modal.Bg = bg;
+Modal.Close = close;
 
 export default Modal;

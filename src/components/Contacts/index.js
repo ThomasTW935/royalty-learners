@@ -13,75 +13,81 @@ import Con from "./Contacts.style";
 export default function Contacts() {
   return (
     <Con>
-      <Con.Column>
-        <Con.Bg>
-          <img src={FootLogo} alt="bg" />
-        </Con.Bg>
-        <Con.Head>Leave us a message</Con.Head>
-        <div>
-          <input
-            id="name"
-            placeholder="Enter Name:"
-            type="text"
-            style={{ width: 250, marginBottom:10 }}
-          />
-        </div>
-        <div>
-          <input
-            id="email"
-            placeholder="Enter Email:"
-            type="text"
-            style={{ width: 250, marginBottom:10 }}
-          />
-        </div>  
-        <label for="msg" style={{ color: "white" }}>
-          Message:
-        </label>
-        <textarea id="name" type="text" style={{ width: 250,marginBottom:10 }} />
-        <Con.Button type="button" style={{ width: 250,marginBottom:10 }}>
-          Send
-        </Con.Button>
+      <div>
+        <Con.Form>
+          {/* <Con.Logo>
+            <img src={FootLogo} alt="bg" />
+          </Con.Logo> */}
+          <Con.Head>Leave us a message</Con.Head>
+          <div>
+            <label>Name:</label>
+            <input id="name" placeholder="Enter Name:" type="text" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" placeholder="Enter Email:" type="text" />
+          </div>
+          <div>
+            <label for="msg">Message:</label>
+            <textarea id="name" type="text" />
+          </div>
+          <button type="button">Send</button>
+        </Con.Form>
 
-        <Con.Texts>
-          <Copyright width={15} height={15} />
-          2021 RoyaltyLearners Pte Ltd Reg.No.20123789123D All Right Reserved.
-        </Con.Texts>
-      </Con.Column>
+        <Con.Icons>
+          <Copyright size={16} />
+          <span>
+            2021 RoyaltyLearners Pte Ltd Reg.No.20123789123D All Right Reserved.
+          </span>
+        </Con.Icons>
+      </div>
       {/* 2nd Row */}
-      <Con.Column>
-        <Con.Head>FOR INQUIRIES:</Con.Head>
-        <Con.Icons>
-          <Email width={30} height={30} />
-          contactus@royaltylearners.ph
-        </Con.Icons>
-        <Con.Icons>
-          <Telephone width={30} height={30} />
-          (+8) 412-123-1234
-        </Con.Icons>
-        <Con.Icons>
-          <Mobile width={30} height={30} />
-          +63 935 415 0784
-        </Con.Icons>
-        <Con.Icons>
-          <Facebook width={30} height={30} />
-          www.facebook.com/royaltyleaners
-        </Con.Icons>
-
-        <Con.Head>OPERATING HOURS:</Con.Head>
-        <Con.Icons>
-          <Time width={30} height={30} />
-          Monday-Friday 8am - 5pm
-        </Con.Icons>
-
-        <Con.Head>FIND US:</Con.Head>
-        <Con.Icons>
-          <Address width={30} height={30} />
-          Blk. 68, Cacawaka Meet Road, Sowicked, PA 15612
-        </Con.Icons>
-        <Con.Map>
-          <img src={Map} alt="Location" />
-        </Con.Map>
-      </Con.Column>
+      <div>
+        <Con.Info>
+          <Con.Head>FOR INQUIRIES:</Con.Head>
+          <div>
+            <Con.Icons>
+              <Email size={16} />
+              <span>contactus@royaltylearners.ph</span>
+            </Con.Icons>
+            <Con.Icons>
+              <Telephone size={16} />
+              <span>(+8) 412-123-1234</span>
+            </Con.Icons>
+            <Con.Icons>
+              <Mobile size={16} />
+              <span>+63 935 415 0784</span>
+            </Con.Icons>
+          </div>
+        </Con.Info>
+        {/* <section>
+          <Con.Icons>
+            <Facebook size={16} />
+            <span>www.facebook.com/royaltyleaners</span>
+          </Con.Icons>
+        </section> */}
+        <Con.Info>
+          <Con.Head>OPERATING HOURS:</Con.Head>
+          <div>
+            <Con.Icons>
+              <Time size={30} />
+              <span>Monday-Friday 8am - 5pm</span>
+            </Con.Icons>
+          </div>
+        </Con.Info>
+        <Con.Info>
+          <Con.Head>FIND US:</Con.Head>
+          <div>
+            <Con.Icons full={true}>
+              <Address size={30} />
+              <span>Blk. 68, Cacawaka Meet Road, Sowicked, PA 15612</span>
+            </Con.Icons>
+          </div>
+          <Con.Map>
+            <img src={Map} alt="Location" />
+          </Con.Map>
+        </Con.Info>
+      </div>
     </Con>
   );
 }

@@ -1,67 +1,69 @@
 import styled from "styled-components";
 
 const Con = styled.div`
-padding-top: 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background: #5e68d0;
-  margin-bottom: -100px;
-  
-`;
- const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-
-`;
-
-const Icons = styled.a`
-  color: #fff;
-  margin-bottom: 5px;
-  font-size: 5px;
-  text-decoration: none;
-
-  &:hover {
-    color: #fbeb5c;
-    cursor: pointer;
-    transition: 200ms ease-in;
+  & > div {
+    width: 50%;
   }
 `;
 
-const Texts = styled.p`
-font-size: 12px;
-text-decoration: none;
+const form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+  div {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+  }
+  button {
+    width: 15ch;
+    margin: 0.5em auto 0.5em 0;
+  }
 `;
 
-const Bg = styled.div`
-height: 250px;
-width: 380px;
-margin-bottom: -100px;
-font-size:10px;
+const info = styled.div`
+  margin: 1em 0;
+  display:flex;
+  flex-direction:column;
+  gap: .2em;
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
-const Head = styled.p`
-font-size: 15px;
-color: #fff;
-margin-top: 10px;
-margin-bottom: 10px;
-font-weight: bold;
+const Icons = styled.p`
+  color: #fff;
+  text-decoration: none;
+  grid-column: ${props=> props.full ? "1/3" : ""};
+  span {
+    margin: 0 0.5em;
+  }
+ 
+`;
 
+const logo = styled.div`
+  width: 300px;
+  height: 50%;
+`;
+const head = styled.h4`
+  color: #fff;
+  text-transform: uppercase;
 `;
 
 const Map = styled.div`
-height: 200px;
-width: 450px;
+  height: 200px;
+  width: 450px;
+  margin: .5em 0;
 `;
 
-const Button = styled.button`
-    cursor: pointer;
-  `;
-
-Con.Column = Column
-Con.Icons = Icons
-Con.Bg = Bg
-Con.Head = Head
-Con.Map = Map
-Con.Texts = Texts
-Con.Button = Button
+Con.Icons = Icons;
+Con.Logo = logo;
+Con.Head = head;
+Con.Map = Map;
+Con.Form = form;
+Con.Info = info;
 export default Con;
