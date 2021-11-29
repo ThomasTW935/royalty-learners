@@ -1,4 +1,4 @@
 import Home from "./home";
-import Admin from "./admin"
+import Dashboard from "./dashboard/Dashboard"
 
-export { Home, Admin };
+export { Home, Dashboard };

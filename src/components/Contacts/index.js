@@ -15,9 +15,9 @@ export default function Contacts() {
     <Con>
       <div>
         <Con.Form>
-          {/* <Con.Logo>
+          <Con.Logo>
             <img src={FootLogo} alt="bg" />
-          </Con.Logo> */}
+          </Con.Logo>
           <Con.Head>Leave us a message</Con.Head>
           <div>
             <label>Name:</label>
@@ -43,7 +43,7 @@ export default function Contacts() {
       </div>
       {/* 2nd Row */}
       <div>
-        <Con.Info>
+        <Con.Info >
           <Con.Head>FOR INQUIRIES:</Con.Head>
           <div>
             <Con.Icons>
@@ -59,14 +59,12 @@ export default function Contacts() {
               <span>+63 935 415 0784</span>
             </Con.Icons>
           </div>
-        </Con.Info>
         {/* <section>
           <Con.Icons>
             <Facebook size={16} />
             <span>www.facebook.com/royaltyleaners</span>
           </Con.Icons>
         </section> */}
-        <Con.Info>
           <Con.Head>OPERATING HOURS:</Con.Head>
           <div>
             <Con.Icons>
@@ -74,8 +72,6 @@ export default function Contacts() {
               <span>Monday-Friday 8am - 5pm</span>
             </Con.Icons>
           </div>
-        </Con.Info>
-        <Con.Info>
           <Con.Head>FIND US:</Con.Head>
           <div>
             <Con.Icons full={true}>

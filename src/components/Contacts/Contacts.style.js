@@ -26,7 +26,7 @@ const form = styled.form`
 `;
 
 const info = styled.div`
-  margin: 1em 0;
+  margin-Top:5rem;
   display:flex;
   flex-direction:column;
   gap: .2em;
