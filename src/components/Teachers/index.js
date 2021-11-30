@@ -34,6 +34,24 @@ export default function Teachers() {
       image: cover,
       credentials: [],
     },
+    {
+      first_name: "Daryl",
+      last_name: "Thomas",
+      image: cover,
+      credentials: [],
+    },
+    {
+      first_name: "Daryl",
+      last_name: "Thomas",
+      image: cover,
+      credentials: [],
+    },
+    {
+      first_name: "Daryl",
+      last_name: "Thomas",
+      image: cover,
+      credentials: [],
+    },
   ];
   return (
     <Con>

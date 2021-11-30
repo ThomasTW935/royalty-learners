@@ -1,10 +1,10 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Login from '../../components/Login/Login'
+import useToken from '../../hooks/useToken'
 
 
 export default function Dashboard() {
-  const [token,setToken] = useState()
-
+  const {token,setToken} = useToken()
   if(!token){
     return <Login setToken={setToken}/>
   }

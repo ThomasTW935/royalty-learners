@@ -39,7 +39,8 @@ const imgCon = styled(ImgCon)`
   }
 `
 
-const button = styled.button``
+const button = styled.button`
+`
 
 Con.Title = title
 Con.List = list

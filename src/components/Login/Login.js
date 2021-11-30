@@ -14,8 +14,8 @@ export default function Login({setToken}) {
     const token = await handleLogin({
       username,password
     })
-    console.log(token.data.token)
-    setToken(token.data.token)
+    console.log(token.data)
+    setToken(token.data)
   }
 
   return (
@@ -25,6 +25,7 @@ export default function Login({setToken}) {
         <input type='text' onChange={(e)=> {setUsername(e.target.value)}}/>
       </LoginForm.Label>
       <LoginForm.Label>
+        <p>Password:</p>
         <input type='password' onChange={(e)=> {setPassword(e.target.value)}}/>
       </LoginForm.Label>
       <LoginForm.Button>Login</LoginForm.Button>
