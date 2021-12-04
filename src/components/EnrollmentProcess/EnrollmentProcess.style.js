@@ -30,9 +30,14 @@ const listItem = styled.li`
   }
 `;
 
+const rotateImg = styled.img`
+  transform: rotate(180deg);
+`
+
 Con.Title = title;
 Con.Icon = icon;
 Con.List = list;
 Con.ListItem = listItem;
+Con.RotateImg = rotateImg;
 
 export default Con;

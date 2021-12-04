@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
+const Background= styled.div`
+
+
+`
 const LoginForm = styled.form`
+background: linear-gradient(#E35164 ,#111D45 );
   position:absolute;
   top: 50%;
   left: 50%;
@@ -27,5 +32,6 @@ const button = styled.button`
 
 LoginForm.Label = label
 LoginForm.Button = button
+LoginForm.Bg = Background
 
 export default LoginForm

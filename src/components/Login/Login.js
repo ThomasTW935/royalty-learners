@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import LoginForm from "./Login.style"
 import PropTypes from 'prop-types'
 import useLogin from '../../hooks/useLogin'
+import {UserNinja} from "@styled-icons/fa-solid"
 
 
 export default function Login({setToken}) {
@@ -19,7 +20,9 @@ export default function Login({setToken}) {
   }
 
   return (
+    <LoginForm.Bg>
     <LoginForm onSubmit={handleSubmit}>
+      <UserNinja/>
       <LoginForm.Label>
         <p>Username:</p>
         <input type='text' onChange={(e)=> {setUsername(e.target.value)}}/>
@@ -30,6 +33,7 @@ export default function Login({setToken}) {
       </LoginForm.Label>
       <LoginForm.Button>Login</LoginForm.Button>
     </LoginForm>
+    </LoginForm.Bg>
   )
 }
 Login.propTypes = {

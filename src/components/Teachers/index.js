@@ -5,26 +5,26 @@ import cover from '../../assets/images/cover.jpg'
 export default function Teachers() {
   const teachers = [
     {
-      first_name: "Daryl",
-      last_name: "Thomas",
+      first_name: "Mylene",
+      last_name: "Caruana",
       image: cover,
       credentials: [],
     },
     {
-      first_name: "Daryl",
-      last_name: "Thomas",
+      first_name: "Nico",
+      last_name: "Nem",
       image: cover,
       credentials: [],
     },
     {
-      first_name: "Daryl",
-      last_name: "Thomas",
+      first_name: "Nico",
+      last_name: "Niconi",
       image: cover,
       credentials: [],
     },
     {
-      first_name: "Daryl",
-      last_name: "Thomas",
+      first_name: " My My My",
+      last_name: "Delilah",
       image: cover,
       credentials: [],
     },
