@@ -71,7 +71,7 @@ export default function Teachers() {
             </Con.List.Item>
           )
         )}
-      </Con.List>
+      </Con.List> 
     </Con>
   );
 }
