@@ -2,6 +2,7 @@ import React from "react";
 import Con from "./Teachers.style";
 import cover from '../../assets/images/cover.jpg'
 
+
 export default function Teachers() {
   const teachers = [
     {

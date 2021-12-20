@@ -4,8 +4,9 @@ const Con = styled.div`
   background-color: #51B9E7;
   display:flex;
 
+
   div {
-    margin: 5px;
+    margin: 2rem;
   }
 `;
 
@@ -13,8 +14,10 @@ const section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
-  margin: 5px;
+  width: 50%;
+  height:100%;
+  div{img-size:0.5rem;
+  }
 `;
 
 const title = styled.h2`

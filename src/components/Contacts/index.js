@@ -52,13 +52,14 @@ export default function Contacts() {
             </Con.Icons>
             <Con.Icons>
               <Telephone size={16} />
-              <span>(+8) 412-123-1234</span>
+              <span>(+8) 412-123-1234/</span>
             </Con.Icons>
             <Con.Icons>
               <Mobile size={16} />
               <span>+63 935 415 0784</span>
             </Con.Icons>
           </div>
+
         {/* <section>
           <Con.Icons>
             <Facebook size={16} />
@@ -68,7 +69,7 @@ export default function Contacts() {
           <Con.Head>OPERATING HOURS:</Con.Head>
           <div>
             <Con.Icons>
-              <Time size={30} />
+              <Time size={20} />
               <span>Monday-Friday 8am - 5pm</span>
             </Con.Icons>
           </div>

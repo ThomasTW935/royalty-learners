@@ -14,7 +14,9 @@ const Service = styled.div`
   }
 `
 
-const buttonCon = styled.div``
+const buttonCon = styled.div`
+
+`
 
 Service.ImgCon = ImgCon
 Service.ButtonCon = buttonCon

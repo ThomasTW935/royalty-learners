@@ -32,7 +32,7 @@ const info = styled.div`
   gap: .2em;
   div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
   }
 `;
 const Icons = styled.p`

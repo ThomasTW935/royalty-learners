@@ -27,6 +27,12 @@ const close = styled.button`
   position: absolute;
   top: 1rem;
   right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.2);
+  }
 `;
 
 Modal.Bg = bg;
