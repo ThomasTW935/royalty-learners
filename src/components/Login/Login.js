@@ -6,10 +6,10 @@ import {UserNinja} from "@styled-icons/fa-solid"
 import {useHistory} from 'react-router-dom'
 import ErrorNotice from '../ErrorNotice/ErrorNotice'
 
-export default function Login({setToken}) {
+export default function Login() {
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
-  const {error,setError,setUserData,login} = useUser()
+  const {error,setError,login} = useUser()
   const history = useHistory()
 
   async function handleSubmit(e){
@@ -35,7 +35,4 @@ export default function Login({setToken}) {
     </LoginForm>
     </LoginForm.Bg>
   )
-}
-Login.propTypes = {
-  setToken: PropTypes.func.isRequired
 }

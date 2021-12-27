@@ -47,7 +47,7 @@ const Icons = styled.p`
 
 const logo = styled.div`
   width: 300px;
-  height: 50%;
+  height: 10%;
 `;
 const head = styled.h4`
   color: #fff;
@@ -55,8 +55,8 @@ const head = styled.h4`
 `;
 
 const Map = styled.div`
-  height: 200px;
-  width: 450px;
+  height: 100px;
+  width: 250px;
   margin: .5em 0;
 `;
 

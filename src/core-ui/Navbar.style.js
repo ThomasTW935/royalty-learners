@@ -6,11 +6,13 @@ const Nav = styled.nav`
   align-items: center;
   position: sticky;
   top: 0;
-  background: #FFFDD0;
+  padding: .5em;
+  /* background:hsl(358,68%,40%); */
+  background: #eee;
 `;
 
 const logo = styled.a`
-  width: 300px;
+  width: 200px;
   height: 50%;
   img {
     background: transparent;
