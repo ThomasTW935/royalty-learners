@@ -2,9 +2,10 @@ import React, { useEffect } from "react";
 import Login from "../../components/Login/Login";
 import UserContext from "../../context/UserContext";
 import useUser from "../../hooks/useUser";
-import Table from "../../components/Table/Table"
+import Table from "../../components/Table/Table";
+import NavBar from "./components/NavBar"
+
 export default function Dashboard() {
-  
   const { userData, setUserData, checkLoggedIn } = useUser();
 
   useEffect(() => {
@@ -15,12 +16,13 @@ export default function Dashboard() {
     return <Login />;
   }
 
- 
   return (
     <div>
       <UserContext.Provider value={{ userData, setUserData }}>
+        <NavBar/>
         <h1>Dashboard</h1>
-        <Table/>
+
+        <Table />
       </UserContext.Provider>
     </div>
   );
