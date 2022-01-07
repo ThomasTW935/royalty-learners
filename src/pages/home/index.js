@@ -6,6 +6,7 @@ import AboutUs from "../../components/AboutUs";
 import Teachers from "../../components/Teachers";
 import EnrollmentProcess from "../../components/EnrollmentProcess";
 import Navbar from "../../components/Navbar";
+import Scheduler from "../../components/scheduler";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Teachers />
         <AboutUs />
         <Contacts />
+        <Scheduler/>
       </main>
     </>
   );

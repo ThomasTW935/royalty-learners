@@ -1,6 +1,7 @@
 import React from "react";
 import Con from "./Teachers.style";
 import cover from '../../assets/images/cover.jpg'
+import Nicopic from '../../assets/teachers_photo/teach1.jpg'
 
 
 export default function Teachers() {
@@ -12,20 +13,20 @@ export default function Teachers() {
       credentials: [],
     },
     {
-      first_name: "Nico",
-      last_name: "Nem",
+      first_name: "Mylene",
+      last_name: "Caruana",
       image: cover,
       credentials: [],
     },
     {
-      first_name: "Nico",
-      last_name: "Niconi",
-      image: cover,
+      first_name: "Mylene",
+      last_name: "Caruana",
+      image: Nicopic,
       credentials: [],
     },
     {
-      first_name: " My My My",
-      last_name: "Delilah",
+      first_name: " Mylene",
+      last_name: "Caruana",
       image: cover,
       credentials: [],
     },

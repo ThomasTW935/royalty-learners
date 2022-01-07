@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Modal from "../../core-ui/Modal.style";
 
+
 const SubjectCon = styled(Modal)`
   flex-direction: column;
   max-height: 70vh;

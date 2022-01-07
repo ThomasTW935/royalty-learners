@@ -6,16 +6,18 @@ export default function AboutUs() {
   return (
     <Con>
       <Con.Section>
-        <div><img src={child} alt="cutekids"/></div>
+        <Con.Logo>
+       <img src={child} alt="cutekids"/>
+       </Con.Logo>
         <div>
           <Con.Title>About Us</Con.Title>
           <Con.Desc>
-            The Royalty Learning Center is a school that is based in the
-            Philippines offering educational services for students with
-            specialeducation needs.Our school has a team of teachers and medical
-            professionals specializing in Special Education to provide a proper
-            evaluation and best quality education for our students. Our school
-            also has well-designed facilities suited to provide comfort,
+            The Royalty Learning Center is a school that is based 
+            in the Philippines offering educational services for students 
+            with specialeducation needs. Our school has a team of teachers 
+            and medical professionals specializing in Special Education to 
+            provide a proper evaluation and best quality education for our students. 
+            Our school also has well-designed facilities suited to provide comfort,
             convenience, and productivity boost for the students, parents,
             teachers, and the school staff. We care about the growth of our
             students and we are willing to provide it for them.

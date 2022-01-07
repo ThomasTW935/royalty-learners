@@ -2,7 +2,9 @@ import styled from "styled-components";
 import List from "../../core-ui/List.style"
 import ImgCon from "../../core-ui/ImgCon.style"
 
-const Con = styled.section``
+const Con = styled.section`
+background-color:white;
+`;
 
 const title = styled.h2`
 

@@ -5,7 +5,7 @@ import { Time } from "@styled-icons/boxicons-solid/Time";
 import { Email } from "@styled-icons/evaicons-solid/Email";
 import { Telephone } from "@styled-icons/foundation/Telephone";
 import { Mobile } from "@styled-icons/boxicons-solid/Mobile";
-import { Facebook } from "@styled-icons/boxicons-logos/Facebook";
+//import { Facebook } from "@styled-icons/boxicons-logos/Facebook";
 import { Address } from "@styled-icons/entypo/Address";
 import { Copyright } from "@styled-icons/boxicons-regular/Copyright";
 import Con from "./Contacts.style";
@@ -35,8 +35,7 @@ export default function Contacts() {
         </Con.Form>
 
         <Con.Icons>
-          <Copyright size={16} />
-          <span>
+          <span marginTop={205}><Copyright size={16} />
             2021 RoyaltyLearners Pte Ltd Reg.No.20123789123D All Right Reserved.
           </span>
         </Con.Icons>
@@ -69,14 +68,14 @@ export default function Contacts() {
           <Con.Head>OPERATING HOURS:</Con.Head>
           <div>
             <Con.Icons>
-              <Time size={20} />
+              <Time size={16} />
               <span>Monday-Friday 8am - 5pm</span>
             </Con.Icons>
           </div>
           <Con.Head>FIND US:</Con.Head>
           <div>
             <Con.Icons full={true}>
-              <Address size={30} />
+              <Address size={16} />
               <span>Blk. 68, Cacawaka Meet Road, Sowicked, PA 15612</span>
             </Con.Icons>
           </div>
