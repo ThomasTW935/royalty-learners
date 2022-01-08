@@ -1,17 +1,18 @@
-import {useState} from 'react'
-import axios from 'axios'
+import { useState } from "react";
+import axios from "axios";
 
-const useLogin  = ()=> {
-  const baseURL = process.env.REACT_APP_BACKEND_BASEURL || 'http://localhost:5000/api'
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState('')
+const useUser = () => {
+  const baseURL =
+    process.env.REACT_APP_BACKEND_BASEURL || "http://localhost:5000/api";
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [userData, setUserData] = useState({
     token: undefined,
     user: undefined,
   });
 
   const checkLoggedIn = async () => {
-    try{
+    try {
       let token = localStorage.getItem("auth-token");
       if (token === null) {
         localStorage.setItem("auth-token", "");
@@ -31,33 +32,45 @@ const useLogin  = ()=> {
           user: userRes.data,
         });
       }
-    }catch(err){
-      err.msg && setError(err.msg)
+    } catch (err) {
+      err.msg && setError(err.msg);
     }
   };
 
   async function login(credentials) {
     try {
-      setLoading(true)
-      setError('')
-      const response = await axios.post(`${baseURL}/users/login`, credentials)
-      console.log(response)
+      setLoading(true);
+      setError("");
+      const response = await axios.post(`${baseURL}/users/login`, credentials);
+      console.log(response);
       setUserData({
         token: response.data.token,
         user: response.data.user,
-      })
-      localStorage.setItem("auth-token", response.data.token)
+      });
+      localStorage.setItem("auth-token", response.data.token);
     } catch (err) {
-      err.msg && setError(err.msg)
+      err.msg && setError(err.msg);
     }
-    setLoading(false)
+    setLoading(false);
   }
-  async function logout(){
+  async function logout() {
     setUserData({
       token: undefined,
       user: undefined,
     });
-    localStorage.setItem("auth-token","");
+    localStorage.setItem("auth-token", "");
+  }
+  async function fetchUsers() {
+    try {
+      setLoading(true);
+      setError("");
+      const response = await axios.get(`${baseURL}/users/all`);
+      console.log(response.data)
+      return response.data
+    } catch (err) {
+      err.msg && setError(err.msg);
+    }
+    setLoading(false);
   }
   return {
     loading,
@@ -66,8 +79,9 @@ const useLogin  = ()=> {
     setUserData,
     checkLoggedIn,
     login,
-    logout
-  }
-}
+    logout,
+    fetchUsers,
+  };
+};
 
-export default useLogin
+export default useUser;

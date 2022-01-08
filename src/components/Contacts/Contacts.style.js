@@ -39,9 +39,6 @@ const Icons = styled.p`
   color: #fff;
   text-decoration: none;
   grid-column: ${props=> props.full ? "1/3" : ""};
-  span {
-    margin: 0 0.5em;
-  }
  
 `;
 

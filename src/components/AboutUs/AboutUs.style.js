@@ -18,9 +18,14 @@ const section = styled.section`
 `;
 
 const logo = styled.div`
-width: 380px;
-  height: 200px;
-  marginTop:5rem;
+width: 600px;
+  height: 250px;
+  img {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 const title = styled.h2`

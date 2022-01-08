@@ -12,7 +12,7 @@ import Con from "./Contacts.style";
 
 export default function Contacts() {
   return (
-    <Con>
+    <Con id="contacts">
       <div>
         <Con.Form>
           <Con.Logo>
@@ -31,11 +31,15 @@ export default function Contacts() {
             <label for="msg">Message:</label>
             <textarea id="name" type="text" />
           </div>
+          <div>
+            <label>Date:</label>
+            <input type='date'/>
+        </div>
           <button type="button">Send</button>
         </Con.Form>
 
         <Con.Icons>
-          <span marginTop={205}><Copyright size={16} />
+          <span><Copyright size={16} />
             2021 RoyaltyLearners Pte Ltd Reg.No.20123789123D All Right Reserved.
           </span>
         </Con.Icons>

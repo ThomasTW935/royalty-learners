@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import Card from "../Cards";
+//import Card from "../Cards";
 import Con from "./Services.style";
 import { services } from "../../data/services.js";
 import Form from "../../components/Form";
-import ServiceInfo from "../../components/Form/ServiceInfo";
+//import ServiceInfo from "../../components/Form/ServiceInfo";
 import Subject from "./Subject.modal";
 
 export default function Services() {
   const [showModal, setShowModal] = useState(false);
-  // const [infoModal, setInfoModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   // const [infoSubjectModal, setInfoSubjectModal] = useState(false);
   function hideModal(){
+    setIsModalOpen(false)
     setShowModal(false)
   }
   return (
@@ -23,16 +24,17 @@ export default function Services() {
             <div>
               <img src={service.src} alt={service.title} />
             </div>
+
             <p>{service.description}</p>
             <div>
-              <button>Register</button>
+              <button onClick={() => setIsModalOpen(true)}>Register</button>
               <button onClick={() => setShowModal(true)}>See More</button>
             </div>
           </Con.Service>
         ))}
       </Con.Services>
       <Subject showModal={showModal} hideModal={hideModal} />
-      {/* <Form isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} /> */}
+      <Form isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       {/* <ServiceInfo infoModal={infoModal} setInfoModal={setInfoModal} /> */}
     </Con>
   );

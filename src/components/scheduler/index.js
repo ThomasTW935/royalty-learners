@@ -3,8 +3,7 @@ import React from 'react'
 export default function Scheduler() {
     return (
         <div>
-            <label>Date:</label>
-            <input type='date'/>
+            <h1>hi</h1>
         </div>
     )
 }

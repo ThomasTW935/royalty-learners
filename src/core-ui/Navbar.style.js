@@ -12,7 +12,7 @@ const Nav = styled.nav`
 `;
 
 const logo = styled.a`
-  width: 200px;
+  width: 100px;
   height: 50%;
   img {
     background: transparent;

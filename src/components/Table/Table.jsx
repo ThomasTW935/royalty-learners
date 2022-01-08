@@ -1,41 +1,49 @@
-import { useMemo } from "react";
+import { useMemo,useEffect,useState } from "react";
 import TableStyle from "./Table.style";
 import { useTable, useSortBy } from "react-table";
 import { SortUp, SortDown } from "@styled-icons/fa-solid";
+import useUser from "../../hooks/useUser"; 
 
 export default function Table() {
-  const data = useMemo(
+  const [data,setData] = useState([])
+  const {fetchUsers} = useUser()
+  useEffect(()=>{
+    async function fetchData() {
+      const newData = await fetchUsers()
+      setData(newData)
+      console.log(newData)
+    }
+    fetchData();
+  },[])
+
+  console.log(data)
+  // const data = useMemo(
+  //   () => [
+  //     {
+  //       firstName: "Daryl",
+  //       lastName: "Thomas",
+  //     },
+  //     {
+  //       firstName: "John",
+  //       lastName: "Doe",
+  //     },
+  //     {
+  //       firstName: "Jane",
+  //       lastName: "Doe",
+  //     },
+  //   ],
+  //   []
+  // );
+  const columns = useMemo(
     () => [
-      {
-        firstName: "Daryl",
-        lastName: "Thomas",
-      },
-      {
-        firstName: "John",
-        lastName: "Doe",
-      },
-      {
-        firstName: "Jane",
-        lastName: "Doe",
-      },
+      { Header: "Username", accessor: "username" },
+      { Header: "First Name", accessor: "firstName" },
+      { Header: "Last Name", accessor: "lastName" },
     ],
     []
   );
 
-  const columns = useMemo(
-    () => [
-      {
-        Header: "First Name",
-        accessor: "firstName",
-        isVisible: false,
-      },
-      {
-        Header: "Last Name",
-        accessor: "lastName",
-      },
-    ],
-    []
-  );
+  
 
   const tableInstance = useTable({ columns, data }, useSortBy);
 

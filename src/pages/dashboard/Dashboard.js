@@ -1,28 +1,27 @@
-import React, { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Login from "../../components/Login/Login";
 import UserContext from "../../context/UserContext";
 import useUser from "../../hooks/useUser";
 import Table from "../../components/Table/Table";
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
 
 export default function Dashboard() {
-  const { userData, setUserData, checkLoggedIn } = useUser();
+  const { userData, setUserData, checkLoggedIn, fetchUsers } = useUser();
 
   useEffect(() => {
     checkLoggedIn();
   }, []);
-  console.log(userData.data);
-  if (!userData.data?.token === undefined) {
+
+  if (userData.data?.token === undefined) {
     return <Login />;
   }
-
   return (
     <div>
       <UserContext.Provider value={{ userData, setUserData }}>
-        <NavBar/>
+        <NavBar />
         <h1>Dashboard</h1>
 
-        <Table />
+        <Table/>
       </UserContext.Provider>
     </div>
   );
