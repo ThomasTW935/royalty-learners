@@ -56,7 +56,7 @@ export default function Teachers() {
     },
   ];
   return (
-    <Con>
+    <Con id="tutor">
       <Con.Title>Royalty Learning Center Teachers</Con.Title>
       <Con.List>
         {teachers.map(

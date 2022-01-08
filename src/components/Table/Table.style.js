@@ -19,8 +19,9 @@ const tBody = styled.tbody`
   tr{
     /* cursor: pointer; */
     &:hover {
-      font-weight: bold;
-      color: #009879;
+      background: #009879;
+      color: white;
+      opacity: .8;
     }
   }
 `;

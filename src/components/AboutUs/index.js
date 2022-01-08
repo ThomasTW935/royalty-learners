@@ -4,7 +4,7 @@ import Con from "./AboutUs.style";
 
 export default function AboutUs() {
   return (
-    <Con>
+    <Con id="aboutus">
       <Con.Section>
         <Con.Logo>
        <img src={child} alt="cutekids"/>
@@ -34,6 +34,8 @@ export default function AboutUs() {
             offered services.
           </Con.Desc>
         </div>
+        <br/>
+        <br/>
         <div>
           <Con.Title>Our Vision</Con.Title>
           <Con.List>
