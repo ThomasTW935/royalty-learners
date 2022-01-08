@@ -6,6 +6,7 @@ const Service = styled.div`
   grid-template: 1fr /1fr 2fr;
   gap: 1em;
   padding: 1.5em;
+  
   h3{
     grid-column: 1/3;
   }

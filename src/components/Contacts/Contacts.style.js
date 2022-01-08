@@ -3,9 +3,10 @@ import styled from "styled-components";
 const Con = styled.div`
   display: flex;
   justify-content: space-between;
-  background: #5e68d0;
+  background: #228aef;
   & > div {
     width: 50%;
+    margin: 0 0 0 5em;
   }
 `;
 
@@ -18,6 +19,7 @@ const form = styled.form`
     display: flex;
     flex-direction: column;
     max-width: 50%;
+    
   }
   button {
     width: 15ch;
@@ -49,6 +51,7 @@ const logo = styled.div`
 const head = styled.h4`
   color: #fff;
   text-transform: uppercase;
+  marginLeft: 100px;
 `;
 
 const Map = styled.div`

@@ -74,7 +74,7 @@ export default function StudentInformation({
         <label>Male:</label>
         <input type="radio" selected />
         <label>Female:</label>
-        <input type="radio" />
+        <input type="radio" selected/>
       </Con.Section>
       <Con.Section>
         <label>Student Level</label>

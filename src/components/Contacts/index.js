@@ -20,6 +20,8 @@ export default function Contacts() {
           </Con.Logo>
           <Con.Head>Leave us a message</Con.Head>
           <div>
+
+            
             <label>Name:</label>
             <input id="name" placeholder="Enter Name:" type="text" />
           </div>
@@ -31,10 +33,6 @@ export default function Contacts() {
             <label for="msg">Message:</label>
             <textarea id="name" type="text" />
           </div>
-          <div>
-            <label>Date:</label>
-            <input type='date'/>
-        </div>
           <button type="button">Send</button>
         </Con.Form>
 

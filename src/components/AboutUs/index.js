@@ -28,14 +28,14 @@ export default function AboutUs() {
       <Con.Section>
         <div>
           <Con.Title>Our Mission</Con.Title>
+          <Con.List>
           <Con.Desc>
             The Royalty Learning Center helps children with special needs to
             grow and achieve their fullest potential by going through our
             offered services.
           </Con.Desc>
+          </Con.List>
         </div>
-        <br/>
-        <br/>
         <div>
           <Con.Title>Our Vision</Con.Title>
           <Con.List>
