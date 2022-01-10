@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Con = styled.div`
   display: flex;
   justify-content: space-between;
-  background: #228aef;
+  background:#001440;
   & > div {
     width: 50%;
     margin: 0 0 0 5em;

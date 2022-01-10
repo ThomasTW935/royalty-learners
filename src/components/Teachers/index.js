@@ -7,14 +7,14 @@ import Kim from '../../assets/teachers_photo/taba.jpg'
 export default function Teachers() {
   const teachers = [
     {
-      first_name: "Mylene",
-      last_name: "Caruana",
+      first_name: "Concordia ",
+      last_name: "Bag-ao",
       image: cover,
       credentials: [],
     },
     {
-      first_name: "Mylene",
-      last_name: "Caruana",
+      first_name: "Daryl",
+      last_name: "Thomas",
       image: cover,
       credentials: [],
     },
@@ -31,29 +31,12 @@ export default function Teachers() {
       credentials: [],
     },
     {
-      first_name: "my",
-      last_name: "My",
+      first_name: "Michael",
+      last_name: "Tanay",
       image: cover,
       credentials: [],
     },
-    {
-      first_name: "len",
-      last_name: "len",
-      image: cover,
-      credentials: [],
-    },
-    {
-      first_name: "Mylene",
-      last_name: "Caruana",
-      image: cover,
-      credentials: [],
-    },
-    {
-      first_name: "Mylene",
-      last_name: "Caruana",
-      image: cover,
-      credentials: [],
-    },
+  
   ];
   return (
     <Con id="tutor">

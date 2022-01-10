@@ -3,21 +3,18 @@ import LoginForm from "./Login.style"
 import PropTypes from 'prop-types'
 import useUser from '../../hooks/useUser'
 import {UserNinja} from "@styled-icons/fa-solid"
-import {useHistory} from 'react-router-dom'
 import ErrorNotice from '../ErrorNotice/ErrorNotice'
 
 export default function Login() {
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
-  const {error,setError,login} = useUser()
-  const history = useHistory()
+  const {userData,error,setError,login} = useUser()
 
   async function handleSubmit(e){
     e.preventDefault()
     const credentials = {username,password}
     login(credentials)
   }
-
   return (
     <LoginForm.Bg>
     <LoginForm onSubmit={handleSubmit}>

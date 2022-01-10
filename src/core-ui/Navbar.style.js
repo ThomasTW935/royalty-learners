@@ -8,7 +8,7 @@ const Nav = styled.nav`
   top: 0;
   padding: .5em;
   /* background:hsl(358,68%,40%); */
-  background: #eee;
+  background: #228aef;
 `;
 
 const logo = styled.a`
@@ -31,7 +31,7 @@ const list = styled.ul`
 `;
 const item = styled.li`
   a {
-    color: black;
+    color: white;
     font-family: roboto slab, serif;
     text-decoration: none;
     padding: 0.25rem 0.5rem;

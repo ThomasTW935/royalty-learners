@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {useHistory} from "react-router-dom"
 import axios from "axios";
 
 const useUser = () => {
@@ -10,6 +11,7 @@ const useUser = () => {
     token: undefined,
     user: undefined,
   });
+  const history = useHistory()
 
   const checkLoggedIn = async () => {
     try {
@@ -48,6 +50,7 @@ const useUser = () => {
         user: response.data.user,
       });
       localStorage.setItem("auth-token", response.data.token);
+      history.push("/dashboard")
     } catch (err) {
       err.msg && setError(err.msg);
     }
@@ -59,6 +62,7 @@ const useUser = () => {
       user: undefined,
     });
     localStorage.setItem("auth-token", "");
+    history.push("/")
   }
   async function fetchUsers() {
     try {
