@@ -4,9 +4,10 @@ import { useTable, useSortBy } from "react-table";
 import { SortUp, SortDown } from "@styled-icons/fa-solid";
 import useUser from "../../hooks/useUser"; 
 
-export default function Table() {
+export default function Table({type}) {
   const [data,setData] = useState([])
   const {fetchUsers} = useUser()
+  console.log(type)
   useEffect(()=>{
     async function fetchData() {
       const newData = await fetchUsers()
@@ -16,24 +17,6 @@ export default function Table() {
     fetchData();
   },[])
 
-  console.log(data)
-  // const data = useMemo(
-  //   () => [
-  //     {
-  //       firstName: "Daryl",
-  //       lastName: "Thomas",
-  //     },
-  //     {
-  //       firstName: "John",
-  //       lastName: "Doe",
-  //     },
-  //     {
-  //       firstName: "Jane",
-  //       lastName: "Doe",
-  //     },
-  //   ],
-  //   []
-  // );
   const columns = useMemo(
     () => [
       { Header: "Username", accessor: "username" },
@@ -42,6 +25,14 @@ export default function Table() {
     ],
     []
   );
+  // const studentColumns = useMemo(
+  //   () => [
+  //     { Header: "Username", accessor: "username" },
+  //     { Header: "First Name", accessor: "firstName" },
+  //     { Header: "Last Name", accessor: "lastName" },
+  //   ],
+  //   []
+  // );
 
   
 

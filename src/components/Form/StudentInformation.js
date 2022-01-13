@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import Con from "./Form.style";
 
 export default function StudentInformation({
@@ -8,9 +8,17 @@ export default function StudentInformation({
   studentInformation,
   setStudentInformation,
 }) {
+  const {disabled, setDisabled} = useState(true)
   function handleContactNo(e) {
     console.log(e.target.value);
   }
+  console.log(studentInformation)
+  function validate(){
+    for(let value in studentInformation){
+      console.log(studentInformation[value])
+    }
+  }
+  validate()
   return (
     <div style={{ display: modal === 0 ? "block" : "none" }}>
       <Con.Section>
@@ -70,12 +78,16 @@ export default function StudentInformation({
           }
         />
       </Con.Section>
-      <Con.Section>
-        <label>Male:</label>
-        <input type="radio" selected />
-        <label>Female:</label>
-        <input type="radio" selected/>
-      </Con.Section>
+      <Con.RadioGroup>
+        <div>
+          <label>Male:</label>
+          <input type="radio" name="gender" selected />
+        </div>
+        <div>
+          <label>Female:</label>
+          <input type="radio" name="gender" />
+        </div>
+      </Con.RadioGroup>
       <Con.Section>
         <label>Student Level</label>
         <select>
@@ -118,7 +130,7 @@ export default function StudentInformation({
         />
       </Con.Section>
       <Con.Buttons>
-        <button type="button" onClick={() => setModal(modal + 1)}>
+        <button type="button" disabled={disabled} onClick={() => setModal(modal + 1)}>
           Proceed
         </button>
         <button onClick={handleModalClose}>Cancel</button>

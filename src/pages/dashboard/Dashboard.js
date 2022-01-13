@@ -7,6 +7,7 @@ import {useHistory} from "react-router-dom"
 
 export default function Dashboard() {
   const { userData, checkLoggedIn } = useUser();
+  const {type,setType} = useState()
   const history = useHistory()
   useEffect(() => {
     checkLoggedIn();
@@ -15,9 +16,9 @@ export default function Dashboard() {
   console.log(userData)
   return (
     <div>
-      <NavBar />
-      <h1>Dashboard</h1>
-      <Table />
+      <NavBar setType={setType} type={type}/>
+      <Table type='teachers'/>
+
     </div>
   );
 }

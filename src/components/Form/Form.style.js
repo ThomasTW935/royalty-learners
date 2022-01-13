@@ -44,6 +44,16 @@ const section = styled.section`
   }
 `;
 
+const radioGroup = styled(section)`
+  flex-direction:row;
+  div{
+    display:flex;
+    flex-direction: column;
+  }
+`
+
+
+
 const buttons = styled.section`
   display: flex;
   justify-content: center;
@@ -67,6 +77,7 @@ const close = styled.button`
 
 Con.Form = form;
 Con.Section = section;
+Con.RadioGroup = radioGroup;
 Con.Close = close;
 Con.Buttons = buttons;
 Con.Title = title;

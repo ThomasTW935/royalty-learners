@@ -1,9 +1,8 @@
-import logo from "../../../assets/images/LogoIllustration1.png";
+import logo from "../../../assets/images/RoyaltyLearnersLogo2.png";
 import Nav from "../../../core-ui/Navbar.style";
-import { Link } from "react-router-dom";
 import useUser from "../../../hooks/useUser"
 
-export default function NavBar() {
+export default function NavBar({type,setType}) {
   const {logout} = useUser()
   return (
     <Nav>
@@ -11,18 +10,13 @@ export default function NavBar() {
         <img src={logo} alt="logo" />
       </Nav.Logo>
       <Nav.List>
-        <Nav.Item>
-          <Link href="">Users</Link>
+        <Nav.Item onClick={()=>{ setType("teachers") }}>
+          <button>Teachers</button>
         </Nav.Item>
-        <Nav.Item>
-          <Link href="">Students</Link>
+        <Nav.Item onClick={()=>{ setType("students") }}>
+          <button>Students</button>
         </Nav.Item>
-        <Nav.Item>
-          <Link href="">Test</Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Link href="">Test</Link>
-        </Nav.Item>
+        
         <Nav.Item>
           <button onClick={logout}>Logout</button>
         </Nav.Item>
