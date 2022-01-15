@@ -28,18 +28,29 @@ const list = styled.ul`
   font-size: 1.1rem;
   list-style: none;
   text-transform: capitalize;
+  
 `;
 const item = styled.li`
-  a {
+  a,button {
     color: white;
+    text-transform: capitalize;
     font-family: roboto slab, serif;
     text-decoration: none;
     padding: 0.25rem 0.5rem;
-    border-bottom: ${(props) => (props.active ? "2px solid black" : "")};
+    border-bottom: ${(props) => (props.active ? "2px solid white" : "2px solid transparents")};
+    cursor: pointer;
     &:hover {
-      border-bottom: 2px solid black;
-      color: #ffffff;
-      transition: 200ms ease-in;
+      border-bottom: 1px solid white;
+    }
+  }
+  button{
+    background: 0;
+    border: 0;
+  }
+  &:last-child{
+    border: 0;
+    button:hover {
+      border: 0;
     }
   }
 `;

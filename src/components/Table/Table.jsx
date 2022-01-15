@@ -16,24 +16,6 @@ export default function Table() {
     fetchData();
   },[])
 
-  console.log(data)
-  // const data = useMemo(
-  //   () => [
-  //     {
-  //       firstName: "Daryl",
-  //       lastName: "Thomas",
-  //     },
-  //     {
-  //       firstName: "John",
-  //       lastName: "Doe",
-  //     },
-  //     {
-  //       firstName: "Jane",
-  //       lastName: "Doe",
-  //     },
-  //   ],
-  //   []
-  // );
   const columns = useMemo(
     () => [
       { Header: "Username", accessor: "username" },
@@ -42,7 +24,6 @@ export default function Table() {
     ],
     []
   );
-
   
 
   const tableInstance = useTable({ columns, data }, useSortBy);
