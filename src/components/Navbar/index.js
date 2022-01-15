@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import Nav from "../../core-ui/Navbar.style";
+import {Link} from "react-router-dom"
 
 const links = [
   {
@@ -47,6 +48,9 @@ export default function Navbar() {
             </Nav.Item>
           );
         })}
+        <Nav.Item>
+          <Link to="/dashboard">Dashboard</Link>
+        </Nav.Item>
       </Nav.List>
     </Nav>
   );
