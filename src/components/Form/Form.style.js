@@ -17,7 +17,7 @@ const form = styled.form`
   top: 50%;
   left: 50%;
   min-height: 75ch;
-  min-width: 70ch;
+  min-width: 50ch;
   transform: translate(-50%, -50%);
   padding: 1rem;
   background: white;
@@ -40,7 +40,6 @@ const section = styled.section`
   gap: 0.25rem;
   input {
     border: 1px solid #111;
-    border-radius: 5px;
   }
 `;
 

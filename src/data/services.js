@@ -1,24 +1,29 @@
 import cover from "../assets/images/cover.jpg";
-import icon from "../assets/images/Background_1.jpg";
-import cam from "../assets/images/cam.jpg";
-import math from "../assets/images/Math.png";
+import History from "../assets/images/history.jpg";
+import Science from "../assets/images/science.jpg";
+import math from "../assets/images/puzmath.jpg";
+import english from "../assets/images/Creative.jpg";
+import Tutor from "../assets/images/tutor.png";
+import Kinder from "../assets/images/kinder.jpg";
+import Preschool from "../assets/images/preschool.jpg";
+import Art from "../assets/images/art.jpg";
 const services = [
   {
-    src: math,
+    src: Preschool,
     title: "Pre-School",
     description:
       "The Royalty Learning Center creates a growth pathway for the children during their young age. Our faculties and facilities are built to support learning of the children enrolled in pre-school program. We will provide quality education for your children together with social, emotional, and behavioural development. Developing these important aspects of the child at a young age can lead to a better life. It only starts with shapes, colors, numbers, and letters to promote fun learning and a step to progress.",
   },
 
   {
-    src: math,
+    src: Kinder,
     title: "Primary School",
     description:
       "The Royalty Learning Center takes the first formal education of the children with great importance. We created the primary education program to match with the rapid developing phase of every child. The primary education is the place where the child defines and exhibits how they learn, therefore a pivotal piece of information can be extracted during this program that can greatly help for the growth of a child in the future. ",
   },
   {
-    src: math,
-    title: "Junior High School",
+    src: Tutor,
+    title: "Tutor",
     description: "Our school is blah blah blah..",
   },
   {
@@ -35,31 +40,32 @@ const subjects = [
     src: math,
     title: "Mathematics",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "This subject provides a basic math concept that will help the students to apply it in their lives.Our students will learn to count and use interactiveresources such as puzzles, pattern blocks, and scales to learn about number recognition, number sequencing, matching, sorting, and memory. This subject provides explicit, systematic instruction in vocabulary. Our students will be able to learn a lot of new words that they are not familiar with, and they will develop a rich understanding of their meaning and use",
   },
   {
-    src: math,
-    title: "Mathematics",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    src: math,
-    title: "Mathematics",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    src: math,
-    title: "Mathematics",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  },
-  {
-    src: math,
+    src: english,
     title: "English",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "This subject provides explicit, systematic instruction in vocabulary. Our student will be able to learn a lot of new words that they are not familiar with, and they will develop a rich understanding of their meaning and use.",
+  },
+
+  {
+    src: Science,
+    title: "Science",
+    description:
+      "This subject provides developmentally appropriate activities that will help students further their growth and development skills. Our students will learn to observe and explore new things about the world and animals through hands-on activities.",
+  },
+  {
+    src: Art,
+    title: "Art",
+    description:
+      "This subject provides a creative outlet, drawing, and coloring activities to strengthen fine motor development. Our students will learn to be creative, draw, and create their original works of art, including paintings and drawings.",
+  },
+  {
+    src:History,
+    title: "History",
+    description:
+      "This subject aims to explain history and culture, how past events have influenced and shaped our world. Our students will be guided by facts, clarifications, and lessons of history from the early civilizations to present.",
   },
 ];
 
