@@ -6,7 +6,7 @@ export default function NavBar({type,setType}) {
   const {logout} = useUser()
   return (
     <Nav>
-      <Nav.Logo href="#home">
+      <Nav.Logo href="/">
         <img src={logo} alt="logo" />
       </Nav.Logo>
       <Nav.List>
