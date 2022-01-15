@@ -17,7 +17,7 @@ export default function Dashboard() {
   return (
     <div>
       <NavBar setType={setType} type={type}/>
-      <Table type='teachers'/>
+      <Table/>
 
     </div>
   );

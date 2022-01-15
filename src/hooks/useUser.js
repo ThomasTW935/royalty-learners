@@ -4,7 +4,7 @@ import axios from "axios";
 
 const useUser = () => {
   const baseURL =
-    process.env.REACT_APP_BACKEND_BASEURL || "http://localhost:5000/api";
+    process.env.REACT_APP_BACKEND_BASEURL || "http://localhost:5000";
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [userData, setUserData] = useState({
@@ -43,7 +43,7 @@ const useUser = () => {
     try {
       setLoading(true);
       setError("");
-      const response = await axios.post(`${baseURL}/users/login`, credentials);
+      const response = await axios.post(`${baseURL}/api/users/login`, credentials);
       console.log(response);
       setUserData({
         token: response.data.token,
@@ -68,7 +68,7 @@ const useUser = () => {
     try {
       setLoading(true);
       setError("");
-      const response = await axios.get(`${baseURL}/users/all`);
+      const response = await axios.get(`${baseURL}/api/users/all`);
       console.log(response.data)
       return response.data
     } catch (err) {
