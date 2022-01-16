@@ -3,10 +3,12 @@ import TableStyle from "./Table.style";
 import { useTable, useSortBy } from "react-table";
 import { SortUp, SortDown } from "@styled-icons/fa-solid";
 import useUser from "../../hooks/useUser"; 
+import EditForm from "../../pages/dashboard/components/Form/EditForm"
 
 export default function Table() {
   const [data,setData] = useState([])
   const {fetchUsers} = useUser()
+  const [selectedID, setSelectedID] = useState(null)
   useEffect(()=>{
     async function fetchData() {
       const newData = await fetchUsers()
@@ -15,12 +17,28 @@ export default function Table() {
     }
     fetchData();
   },[])
+  const [editModal, setEditModal] = useState(false)
+  function handleEdit(value){
+    setSelectedID(value._id)
+    setEditModal(true)
+  }
+  function handleDelete(){
 
+  }
   const columns = useMemo(
     () => [
       { Header: "Username", accessor: "username" },
       { Header: "First Name", accessor: "firstName" },
       { Header: "Last Name", accessor: "lastName" },
+      {
+        Header: 'Actions',
+        Cell: ({row}) => (
+            <div>
+                <TableStyle.TButton onClick={() => handleEdit(row.original)}>Edit</TableStyle.TButton>
+                <TableStyle.TButton onClick={() => handleDelete(row.original)}>Delete</TableStyle.TButton>
+            </div>
+        )
+     }
     ],
     []
   );
@@ -32,6 +50,7 @@ export default function Table() {
     tableInstance;
 
   return (
+    <>
     <TableStyle {...getTableProps()}>
       <TableStyle.THead>
         {headerGroups.map((headerGroup) => (
@@ -74,5 +93,8 @@ export default function Table() {
         })}
       </TableStyle.TBody>
     </TableStyle>
+    {editModal && <EditForm selectedID={selectedID}/>}
+    </>
+    
   );
 }

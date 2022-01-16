@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const TableStyle = styled.table`
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 1rem auto;
   font-size: 0.9em;
   font-family: sans-serif;
   min-width: 400px;
@@ -10,18 +10,18 @@ const TableStyle = styled.table`
 `;
 const tHead = styled.thead`
   tr {
-    background-color: #009879;
+    background-color: rgb(34, 138, 239);
     color: #ffffff;
-    text-align: left;
+    text-align: center;
   }
 `;
 const tBody = styled.tbody`
-  tr{
+  tr {
     /* cursor: pointer; */
     &:hover {
-      background: #009879;
+      background-color: rgba(34, 138, 239, 0.8);
       color: white;
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 `;
@@ -37,11 +37,17 @@ const tHeader = styled.th`
 const tData = styled.td`
   padding: 12px 15px;
 `;
+const tButton = styled.button`
+  background: none;
+  border: 0;
+  cursor: pointer;
+`;
 
 TableStyle.THead = tHead;
 TableStyle.TBody = tBody;
 TableStyle.TRow = tRow;
 TableStyle.THeader = tHeader;
 TableStyle.TData = tData;
+TableStyle.TButton = tButton;
 
 export default TableStyle;

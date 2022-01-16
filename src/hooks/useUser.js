@@ -76,6 +76,18 @@ const useUser = () => {
     }
     setLoading(false);
   }
+  async function fetchUser(id) {
+    try {
+      setLoading(true);
+      setError("");
+      const response = await axios.post(`${baseURL}/api/users/`, {user:id});
+      console.log(response.data)
+      return response.data
+    } catch (err) {
+      err.msg && setError(err.msg);
+    }
+    setLoading(false);
+  }
   return {
     loading,
     error,
@@ -85,6 +97,7 @@ const useUser = () => {
     login,
     logout,
     fetchUsers,
+    fetchUser
   };
 };
 

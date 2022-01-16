@@ -6,6 +6,7 @@ export default function useToken() {
   const baseURL =
     process.env.REACT_APP_BACKEND_BASEURL || "http://localhost:5000";
   const [error, setError] = useState("");
+ 
   const history = useHistory();
   const getToken = () => {
     const tokenString = sessionStorage.getItem("token");
