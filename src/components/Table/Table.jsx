@@ -51,6 +51,7 @@ export default function Table() {
 
   return (
     <>
+    <button onClick={()=> {setEditModal(true)}}>Add New User</button>
     <TableStyle {...getTableProps()}>
       <TableStyle.THead>
         {headerGroups.map((headerGroup) => (
@@ -93,7 +94,7 @@ export default function Table() {
         })}
       </TableStyle.TBody>
     </TableStyle>
-    {editModal && <EditForm selectedID={selectedID}/>}
+    {editModal && <EditForm selectedID={selectedID} setSelectedID={setSelectedID} setEditModal={setEditModal}/>}
     </>
     
   );

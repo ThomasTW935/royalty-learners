@@ -39,7 +39,28 @@ const useUser = () => {
       err.msg && setError(err.msg);
     }
   };
-
+  async function register(credentials) {
+    try {
+      setLoading(true);
+      setError("");
+      const response = await axios.post(`${baseURL}/api/users/register`, credentials);
+      console.log(response)
+    } catch (err) {
+      err.msg && setError(err.msg);
+    }
+    setLoading(false);
+  }
+  async function updateUser(id,credentials) {
+    try {
+      setLoading(true);
+      setError("");
+      const response = await axios.put(`${baseURL}/api/users/${id}`, credentials);
+      console.log(response)
+    } catch (err) {
+      err.msg && setError(err.msg);
+    }
+    setLoading(false);
+  }
   async function login(credentials) {
     try {
       setLoading(true);
@@ -92,8 +113,10 @@ const useUser = () => {
     loading,
     error,
     userData,
+    updateUser,
     setUserData,
     checkLoggedIn,
+    register,
     login,
     logout,
     fetchUsers,

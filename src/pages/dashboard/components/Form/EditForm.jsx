@@ -1,35 +1,74 @@
-import {useState} from "react"
-import Con from "./Form.style"
+import { useState, useEffect, useRef } from "react";
+import Con from "./Form.style";
+import useUser from "../../../../hooks/useUser";
 
-export default function EditForm({selectedID}) {
-  const {username, setUsername} = useState("")
-  const {password, setPassword} = useState("")
-  const {firstName, setFirstName} = useState("")
-  const {lastName, setLastName} = useState("")
-  function handleSubmit(e){
-    e.preventDefault()
+export default function EditForm({ selectedID = null,setSelectedID, setEditModal }) {
+  const usernameRef = useRef();
+  const passwordRef = useRef();
+  const firstNameRef = useRef();
+  const lastNameRef = useRef();
+  const { fetchUser,register, updateUser } = useUser();
+  async function handleUpdate(e) {
+    e.preventDefault();
+    await updateUser(selectedID,{
+      username: usernameRef.current.value,
+      password: passwordRef.current.value,
+      first_name: firstNameRef.current.value,
+      last_name: lastNameRef.current.value
+    })
   }
-  console.log("Selected ID: "+selectedID)
+  async function handleSubmit(e) {
+    e.preventDefault();
+    await register({
+      username: usernameRef.current.value,
+      password: passwordRef.current.value,
+      first_name: firstNameRef.current.value,
+      last_name: lastNameRef.current.value
+    })
+  }
+  useEffect(() => {
+    async function fetchData() {
+      const newData = await fetchUser(selectedID);
+      usernameRef.current.value = newData.username;
+      firstNameRef.current.value = newData.firstName;
+      lastNameRef.current.value = newData.lastName;
+    }
+    if(selectedID)  fetchData();
+  }, []);
+  function handleClose(){
+    setEditModal(false)
+    setSelectedID(null)
+  }
+  console.log("Selected ID: " + selectedID);
   return (
     <Con>
-      <Con.Close>X</Con.Close>
+      <Con.Close
+        type="button"
+        onClick={handleClose}
+      >
+        X
+      </Con.Close>
       <Con.Section>
         <label>Username</label>
-        <input type="text" onChange={(e)=>{setUsername(e.target.value)}}/>
+        <input ref={usernameRef} type="text" />
       </Con.Section>
       <Con.Section>
         <label>Password</label>
-        <input type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
+        <input ref={passwordRef} type="password" />
       </Con.Section>
       <Con.Section>
         <label>First Name</label>
-        <input type="text" onChange={(e)=>{setFirstName(e.target.value)}}/>
+        <input ref={firstNameRef} type="text" />
       </Con.Section>
       <Con.Section>
         <label>Last Name</label>
-        <input type="text" onChange={(e)=>{setLastName(e.target.value)}}/>
+        <input ref={lastNameRef} type="text" />
       </Con.Section>
+      {selectedID === null ? (
         <button onClick={handleSubmit}>Submit</button>
+      ) : (
+        <button onClick={handleUpdate}>Update</button>
+      )}
     </Con>
-  )
+  );
 }
