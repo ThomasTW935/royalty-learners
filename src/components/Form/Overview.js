@@ -5,6 +5,7 @@ export default function Overview({
   handleModalClose,
   modal,
   studentInformation,
+  studentBackground
 }) {
   return (
     <div style={{ display: modal === 2 ? "block" : "none" }}>
@@ -23,9 +24,14 @@ export default function Overview({
       <span>Parent / Guardian: {studentInformation.parentGuardian}</span>
       <br />
       <span>Contact Number: {studentInformation.contactNo}</span>
-      <Con.Buttons>
-        <button onClick={handleModalClose}>Cancel</button>
-      </Con.Buttons>
+      <br />
+      <span>Background of the Student: {studentBackground.background}</span>
+      <br />
+      <span>Student's Daily Schedule of Activities: {studentBackground.dailyActivities}</span>
+      <br />
+      <span>Personality of the Student: {studentBackground.personality}</span>
+      <br />
+      <span>Daily / Monthly Goals of the Parents: {studentBackground.goals}</span>
     </div>
   );
 }

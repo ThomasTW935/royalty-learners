@@ -7,7 +7,7 @@ import { Telephone } from "@styled-icons/foundation/Telephone";
 import { Mobile } from "@styled-icons/boxicons-solid/Mobile";
 //import { Facebook } from "@styled-icons/boxicons-logos/Facebook";
 import { Address } from "@styled-icons/entypo/Address";
-import { Copyright } from "@styled-icons/boxicons-regular/Copyright";
+//import { Copyright } from "@styled-icons/boxicons-regular/Copyright";
 import Con from "./Contacts.style";
 
 export default function Contacts() {
@@ -35,13 +35,8 @@ export default function Contacts() {
           </div>
           <button type="button">Send</button>
         </Con.Form>
+        </div>
 
-        <Con.Icons>
-          <span><Copyright size={16} />
-            2021 RoyaltyLearners Pte Ltd Reg.No.20123789123D All Right Reserved.
-          </span>
-        </Con.Icons>
-      </div>
       {/* 2nd Row */}
       <div>
         <Con.Info >

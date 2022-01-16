@@ -3,10 +3,10 @@ import History from "../assets/images/history.jpg";
 import Science from "../assets/images/science.jpg";
 import math from "../assets/images/puzmath.jpg";
 import english from "../assets/images/Creative.jpg";
-import Tutor from "../assets/images/tutor.png";
 import Kinder from "../assets/images/kinder.jpg";
 import Preschool from "../assets/images/preschool.jpg";
 import Art from "../assets/images/art.jpg";
+import Tutor from "../assets/images/tutor.png";
 const services = [
   {
     src: Preschool,
@@ -24,15 +24,9 @@ const services = [
   {
     src: Tutor,
     title: "Tutor",
-    description: "Our school is blah blah blah..",
+    description: "The Royalty Learning Center offers tutoring program for those students who wants a one on one sessions on an specific subject and in any year level.",
   },
-  {
-    src: math,
-    title: "Senior High School",
-    description:
-      "asdjahskjdhljashdfjadhf  ajdfasdhflasd askdhfajdshflasdhf asdjfhashdflasdhflashd <br/>" +
-      " asjkdhakjsdhaksdhkajshdkajshdkjashkdjhas",
-  },
+  
 ];
 
 const subjects = [
@@ -40,7 +34,7 @@ const subjects = [
     src: math,
     title: "Mathematics",
     description:
-      "This subject provides a basic math concept that will help the students to apply it in their lives.Our students will learn to count and use interactiveresources such as puzzles, pattern blocks, and scales to learn about number recognition, number sequencing, matching, sorting, and memory. This subject provides explicit, systematic instruction in vocabulary. Our students will be able to learn a lot of new words that they are not familiar with, and they will develop a rich understanding of their meaning and use",
+      "This subject provides a basic math concept that will help the students to apply it in their lives.Our students will learn to count and use interactiveresources such as puzzles, pattern blocks, and scales to learn about number recognition, number sequencing, matching, sorting, and memory. This subject provides explicit, systematic instruction in vocabulary. Our students will be able to learn a lot of new words that they are not familiar with, and they will develop a rich understanding of their meaning and use.",
   },
   {
     src: english,

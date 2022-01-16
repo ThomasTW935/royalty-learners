@@ -6,6 +6,10 @@ import { Observable } from "@styled-icons/simple-icons"
 import Con from "./EnrollmentProcess.style";
 import Arrow1 from "../../assets/images/EnrollmentProcessArrow1.PNG";
 import Arrow2 from "../../assets/images/EnrollmentProcessArrow2.PNG";
+import Arrow3 from "../../assets/images/EnrollmentProcessArrow3.PNG";
+import Arrow4 from "../../assets/images/EnrollmentProcessArrow4.PNG";
+
+
 
 export default function index() {
   return (
@@ -56,7 +60,7 @@ export default function index() {
           <p>Welcome to Royalty Learning Center!!!</p>
         </Con.ListItem>
         <Con.ListItem>
-        <Con.RotateImg src={Arrow2} alt="arrow" />
+        <img src={Arrow3} alt="arrow" />
         </Con.ListItem>
         <Con.ListItem>
           <span>Step 5</span>
@@ -68,7 +72,7 @@ export default function index() {
           <p>planning the teaching style needed</p>
         </Con.ListItem>
         <Con.ListItem>
-        <Con.RotateImg src={Arrow1} alt="arrow" />
+        <img src={Arrow4} alt="arrow" />
         </Con.ListItem>
         <Con.ListItem>
           <span>Step 4</span>

@@ -12,13 +12,6 @@ export default function StudentInformation({
   function handleContactNo(e) {
     console.log(e.target.value);
   }
-  console.log(studentInformation)
-  function validate(){
-    for(let value in studentInformation){
-      console.log(studentInformation[value])
-    }
-  }
-  validate()
   return (
     <div style={{ display: modal === 0 ? "block" : "none" }}>
       <Con.Section>
@@ -101,8 +94,6 @@ export default function StudentInformation({
           <option>Grade 8</option>
           <option>Grade 9</option>
           <option>Grade 10</option>
-          <option>Grade 11</option>
-          <option>Grade 12</option>
         </select>
       </Con.Section>
       <Con.Section>
@@ -129,12 +120,6 @@ export default function StudentInformation({
           }
         />
       </Con.Section>
-      <Con.Buttons>
-        <button type="button" disabled={disabled} onClick={() => setModal(modal + 1)}>
-          Proceed
-        </button>
-        <button onClick={handleModalClose}>Cancel</button>
-      </Con.Buttons>
     </div>
   );
 }

@@ -1,19 +1,18 @@
 import React, {useState} from 'react'
 import LoginForm from "./Login.style"
-import PropTypes from 'prop-types'
-import useUser from '../../hooks/useUser'
+import useToken from '../../hooks/useToken'
 import {UserNinja} from "@styled-icons/fa-solid"
 import ErrorNotice from '../ErrorNotice/ErrorNotice'
 
-export default function Login() {
+export default function Login({setToken}) {
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
-  const {userData,error,setError,login} = useUser()
-
+  const {error,setError,login} = useToken()
   async function handleSubmit(e){
     e.preventDefault()
     const credentials = {username,password}
-    login(credentials)
+    const token = await login(credentials)
+    setToken(token)
   }
   return (
     <LoginForm.Bg>

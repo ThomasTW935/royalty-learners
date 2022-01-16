@@ -49,7 +49,6 @@ export default function Navbar() {
           );
         })}
         <Nav.Item>
-          <Link to="/dashboard">Dashboard</Link>
         </Nav.Item>
       </Nav.List>
     </Nav>

@@ -29,9 +29,10 @@ const form = styled.form`
 `;
 
 const title = styled.div`
-  background-color: royalblue;
+  background-color: #047af6;
   font-size: 18px;
-  padding-left: 1rem;
+  padding: .5rem;
+  margin: -1rem -1rem 1rem -1rem;
 `;
 
 const section = styled.section`
@@ -68,7 +69,6 @@ const close = styled.button`
   top: 0%;
   right: 0;
   padding: 1rem;
-
   &:hover {
     transform: scale(1.2);
   }

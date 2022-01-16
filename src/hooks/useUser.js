@@ -34,6 +34,7 @@ const useUser = () => {
           user: userRes.data,
         });
       }
+      console.log(userData)
     } catch (err) {
       err.msg && setError(err.msg);
     }
@@ -44,7 +45,6 @@ const useUser = () => {
       setLoading(true);
       setError("");
       const response = await axios.post(`${baseURL}/api/users/login`, credentials);
-      console.log(response);
       setUserData({
         token: response.data.token,
         user: response.data.user,

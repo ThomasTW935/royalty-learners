@@ -4,6 +4,7 @@ const Con = styled.div`
   display: flex;
   justify-content: space-between;
   background:#001440;
+ min-height:100%;
   & > div {
     width: 50%;
     margin: 0 0 0 5em;
@@ -56,7 +57,7 @@ const head = styled.h4`
 
 const Map = styled.div`
   height: 100px;
-  width: 250px;
+  width: 260px;
   margin: .5em 0;
 `;
 

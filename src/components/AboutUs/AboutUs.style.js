@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const Con = styled.div`
-  background-color: #FFFFF0;
+  background-color:#FEFAEC;
   display:flex;
+  min-height:100%;
   div {
     margin: 1rem;
   }

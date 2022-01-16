@@ -1,9 +1,9 @@
 import logo from "../../../assets/images/RoyaltyLearnersLogo2.png";
 import Nav from "../../../core-ui/Navbar.style";
-import useUser from "../../../hooks/useUser"
+import useToken from "../../../hooks/useToken"
 
 export default function NavBar({type,setType}) {
-  const {logout} = useUser()
+  const {logout} = useToken()
   return (
     <Nav>
       <Nav.Logo href="/">
